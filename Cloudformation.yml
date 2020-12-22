@@ -1,0 +1,53 @@
+AWSTemplateFormatVersion: 2010-09-09
+Parameters:
+  # Domain: example.com
+  DomainName:
+    Type: String
+    Description: "The base domain name for the web site (no 'www')"
+    MinLength: 4
+    MaxLength: 253
+    AllowedPattern: "[a-z0-9]+[-.a-z0-9]*(\\.[a-z][a-z]+)+"
+    ConstraintDescription: "Provide a valid domain name using only lowercase letters, numbers, and dash (-)"
+  NotificationEmail:
+    Type: String
+    Description: Email address to receive Pipeline notifications
+    MinLength: 6
+    AllowedPattern: '.+@[a-z0-9]+[-.a-z0-9]*(\.[a-z][a-z]+)+'
+    ConstraintDescription: Provide a valid email address
+Resources:
+  EventRule: 
+    Type: "AWS::Events::Rule"
+    Properties: 
+      Description: "EventRule"
+      EventPattern: 
+        source:
+        - aws.codepipeline
+        detail-type:
+        - CodePipeline Pipeline Execution State Change
+      State: "ENABLED"
+      Targets: 
+        - 
+          Arn: 
+            Ref: "SnsTopic"
+          Id: "PipelineNotificationTopic"
+  SnsTopic:
+    Type: 'AWS::SNS::Topic'
+    Properties:
+      DisplayName: !Sub "Activity in ${DomainName} Git repository"
+      Subscription:
+        - Endpoint: !Ref NotificationEmail
+          Protocol: email
+  SnsTopicPolicy:
+    Type: 'AWS::SNS::TopicPolicy'
+    Properties:
+      PolicyDocument:
+        Statement:
+          - Sid: TrustCWEToPublishEventsToMyTopic
+            Effect: Allow
+            Principal:
+              Service: events.amazonaws.com
+            Action: 'sns:Publish'
+            Resource:
+              Ref: SnsTopic
+      Topics:
+        - Ref: SnsTopic
