@@ -1,39 +1,55 @@
 AWSTemplateFormatVersion: 2010-09-09
+Description: >-
+  Creates a CloudWatch Rule, SNS topic and Subscription to notify through email
+  when changes Pipeline Execution state changes
 Parameters:
-  # Domain: example.com
   DomainName:
     Type: String
-    Description: "The base domain name for the web site (no 'www')"
+    Description: The base domain name for the web site (no 'www')
     MinLength: 4
     MaxLength: 253
-    AllowedPattern: "[a-z0-9]+[-.a-z0-9]*(\\.[a-z][a-z]+)+"
-    ConstraintDescription: "Provide a valid domain name using only lowercase letters, numbers, and dash (-)"
+    AllowedPattern: '[a-z0-9]+[-.a-z0-9]*(\.[a-z][a-z]+)+'
+    ConstraintDescription: >-
+      Provide a valid domain name using only lowercase letters, numbers, and
+      dash (-)
+    Default: code2inspire.uk
   NotificationEmail:
     Type: String
     Description: Email address to receive Pipeline notifications
     MinLength: 6
     AllowedPattern: '.+@[a-z0-9]+[-.a-z0-9]*(\.[a-z][a-z]+)+'
     ConstraintDescription: Provide a valid email address
+    Default: aqilzeeshan@gmail.com
+  GitHubOwner:
+    Description: GitHub account username.
+    Type: String
+    Default: naziafakhruddin
+  GitHubRepo:
+    Description: Static site repo name.
+    Type: String
+    Default: code2inspire
+  GitHubBranch:
+    Description: The branch that will trigger build/deploy.
+    Type: String
+    Default: main
 Resources:
-  EventRule: 
-    Type: "AWS::Events::Rule"
-    Properties: 
-      Description: "EventRule"
-      EventPattern: 
+  EventRule:
+    Type: 'AWS::Events::Rule'
+    Properties:
+      Description: EventRule
+      EventPattern:
         source:
-        - aws.codepipeline
+          - aws.codepipeline
         detail-type:
-        - CodePipeline Pipeline Execution State Change
-      State: "ENABLED"
-      Targets: 
-        - 
-          Arn: 
-            Ref: "SnsTopic"
-          Id: "PipelineNotificationTopic"
+          - CodePipeline Pipeline Execution State Change
+      State: ENABLED
+      Targets:
+        - Arn: !Ref SnsTopic
+          Id: PipelineNotificationTopic
   SnsTopic:
     Type: 'AWS::SNS::Topic'
     Properties:
-      DisplayName: !Sub "Activity in ${DomainName} Git repository"
+      DisplayName: !Sub 'Activity in ${DomainName} Git repository'
       Subscription:
         - Endpoint: !Ref NotificationEmail
           Protocol: email
@@ -47,7 +63,113 @@ Resources:
             Principal:
               Service: events.amazonaws.com
             Action: 'sns:Publish'
-            Resource:
-              Ref: SnsTopic
+            Resource: !Ref SnsTopic
       Topics:
-        - Ref: SnsTopic
+        - !Ref SnsTopic
+  ArtifactBucket:
+    Type: 'AWS::S3::Bucket'
+    DeletionPolicy: Delete
+    Properties:
+      AccessControl: Private
+  RedirectBucket:
+    Type: 'AWS::S3::Bucket'
+    DeletionPolicy: Delete
+    Properties:
+      AccessControl: PublicRead
+      WebsiteConfiguration:
+        RedirectAllRequestsTo:
+          HostName: !Sub 'www.${DomainName}'
+          Protocol: https
+  StaticSiteBucketPolicy:
+    Type: 'AWS::S3::BucketPolicy'
+    Properties:
+      Bucket: !Ref StaticSiteBucket
+      PolicyDocument:
+        Statement:
+          - Action:
+              - 's3:GetObject'
+            Effect: Allow
+            Resource: !Sub 'arn:aws:s3:::${StaticSiteBucket}/*'
+            Principal: '*'
+  StaticSiteBucket:
+    Type: 'AWS::S3::Bucket'
+    DeletionPolicy: Retain
+    Properties:
+      AccessControl: PublicRead
+      WebsiteConfiguration:
+        IndexDocument: index.html
+        ErrorDocument: 404/index.html
+  CodePipelineRole:
+    Type: 'AWS::IAM::Role'
+    Properties:
+      AssumeRolePolicyDocument:
+        Statement:
+          - Sid: ''
+            Effect: Allow
+            Principal:
+              Service:
+                - codepipeline.amazonaws.com
+            Action: 'sts:AssumeRole'
+      Path: /
+  CodePipelineRolePolicy:
+    Type: 'AWS::IAM::Policy'
+    Properties:
+      PolicyName: CodePipelineRolePolicy
+      PolicyDocument:
+        Statement:
+          - Action:
+              - 's3:GetObject'
+              - 's3:GetObjectVersion'
+              - 's3:GetBucketVersioning'
+            Resource: '*'
+            Effect: Allow
+          - Action:
+              - 's3:PutObject'
+            Resource:
+              - !Sub 'arn:aws:s3:::${StaticSiteBucket}'
+              - !Sub 'arn:aws:s3:::${StaticSiteBucket}/*'
+              - !Sub 'arn:aws:s3:::${ArtifactBucket}'
+              - !Sub 'arn:aws:s3:::${ArtifactBucket}/*'
+            Effect: Allow
+      Roles:
+        - !Ref CodePipelineRole
+  CodePipeline:
+    Type: 'AWS::CodePipeline::Pipeline'
+    Properties:
+      RoleArn: !GetAtt 
+        - CodePipelineRole
+        - Arn
+      Stages:
+        - Name: Source
+          Actions:
+            - Name: SourceAction
+              ActionTypeId:
+                Category: Source
+                Owner: ThirdParty
+                Version: '1'
+                Provider: GitHub
+              OutputArtifacts:
+                - Name: StaticSiteSource
+              Configuration:
+                Owner: !Ref GitHubOwner
+                Repo: !Ref GitHubRepo
+                Branch: !Ref GitHubBranch
+                OAuthToken: '{{resolve:secretsmanager:MyGitHubSecret:SecretString:token}}'
+              RunOrder: 1
+        - Name: Deploy
+          Actions:
+            - Name: S3Deploy
+              ActionTypeId:
+                Category: Deploy
+                Owner: AWS
+                Provider: S3
+                Version: '1'
+              InputArtifacts:
+                - Name: StaticSiteSource
+              Configuration:
+                BucketName: !Ref StaticSiteBucket
+                Extract: 'true'
+              RunOrder: 1
+      ArtifactStore:
+        Type: S3
+        Location: !Ref ArtifactBucket
