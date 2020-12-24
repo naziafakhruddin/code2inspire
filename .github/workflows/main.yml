@@ -55,4 +55,3 @@ jobs:
         template: Cloudformation.yml
         no-fail-on-empty-changeset: "1"
         parameter-overrides: >-
-          DomainName="code2inspire.uk"
