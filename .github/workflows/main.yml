@@ -1,4 +1,4 @@
-# This is a basic workflow to help you get started with Actions
+# Template used - https://github.com/aws-samples/aws-cloudformation-starter-workflow-for-github-actions/blob/master/.github/workflows/deploy.yml
 
 name: CI
 
@@ -15,8 +15,8 @@ on:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # Deploy infrastructure resources like ECR repository and load balancer.
-  # This job will run on every code change to the master branch, but will only deploy
+  # Deploy infrastructure resources like CodePipeline, S3 buckets and others 
+  # This job will run on every code change to the main branch, but will only deploy
   # changes if the infrastructure CloudFormation template in the repository have changed.
   deploy-infrastructure:
     name: Deploy infrastructure
@@ -47,15 +47,6 @@ jobs:
         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         aws-region: us-east-2
 
-    - name: Retrieve default VPC ID and public subnets
-      id: vpc
-      run: |
-        VPC_ID=`aws ec2 describe-vpcs --filters "Name=isDefault, Values=true" --query 'Vpcs[].VpcId' --output text`
-        echo "::set-output name=vpc-id::$VPC_ID"
-        SUBNET_1=`aws ec2 describe-subnets --filters "Name=vpc-id,Values=$VPC_ID" "Name=default-for-az,Values=true" --query 'Subnets[0].SubnetId' --output text`
-        echo "::set-output name=subnet-one::$SUBNET_1"
-        SUBNET_2=`aws ec2 describe-subnets --filters "Name=vpc-id,Values=$VPC_ID" "Name=default-for-az,Values=true" --query 'Subnets[1].SubnetId' --output text`
-        echo "::set-output name=subnet-two::$SUBNET_2"
     - name: Deploy infrastructure with CloudFormation
       id: infrastructure-stack
       uses: aws-actions/aws-cloudformation-github-deploy@v1
@@ -64,7 +55,4 @@ jobs:
         template: Cloudformation.yml
         no-fail-on-empty-changeset: "1"
         parameter-overrides: >-
-          EnvironmentName=${{ steps.env-name.outputs.environment }},
-          VPC=${{ steps.vpc.outputs.vpc-id }},
-          PublicSubnetOne=${{ steps.vpc.outputs.subnet-one }},
-          PublicSubnetTwo=${{ steps.vpc.outputs.subnet-two }}
+          DomainName=${{ steps.env-name.outputs.environment }}
