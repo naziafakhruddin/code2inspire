@@ -1,0 +1,106 @@
+<html lang="en">
+
+<head>
+    <title>Coding Magazine</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Magazine">
+    <meta name="author" content="Programming tutorials">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="refresh" content="600">
+    <meta name="keywords" content="coding,programming tutorials">
+    <meta name="robots" content="onindex,nofollow">
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link rel="stylesheet" type="text/css" href="media.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <script src="script.js"></script>
+
+</head>
+<body>
+<!--For accessibity header,main ,nav ,section ,footer ,form ,label tag and alt is used in img tag.h1,h2,h3,p ,ul,li,input and button tags are also used.Javascript is used in the signup form to confirm details  -->
+<header>
+    <nav>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="articles.html">ARTICLES</a></li>
+            <li><a href="videos.html">VIDEOS</a></li>
+            <li><a href="books.html">BOOKS</a></li>
+            <li><a href="contact.html">GET IN TOUCH</a></li>
+        </ul>
+    </nav>
+
+    <div class="logo">
+        <img src="images/logo.png" alt="logo of the website">
+    </div>
+</header>
+    
+<main>
+    <h1 class="headings">GET IN TOUCH</h1>
+        <img class="mail" src="images/mail.svg" alt="man holding mail">
+        <div class="in-touch1">
+            <h3>Give us your feedback</h3>
+             <p>Your opinion matters.To make our magazine better , we greatly appreciate your feedback. </p>
+        </div>
+        <div class="in-touch2">
+            <h3>Tell us your story</h3>
+             <p>We would like hear about your coding journey. </p>
+        </div>
+
+        <div class="in-touch1">
+            <h3>Ask us a question</h3>
+             <p>Do you have any question regarding coding concept? We'll help you find the answer. </p>
+        </div>
+
+        <div class="in-touch2">
+            <h3>Write for the magazine</h3>
+             <p>If you have any interesting article,tutorial or book review you like to share with us. </p>
+        </div>
+        <div class="contact">
+            <h2>Contact Us </h2>
+             <p>contact@code2inspire.com</p>
+        </div>
+</main>    
+
+<section class ="sign-up">
+  <div class="subscribe">
+    <h1>SIGN UP FOR FREE</h1>
+    <form id = "form" action="">
+    <div>
+        <label for="firstname"><i class="fas fa-user fa-1x"></i>  First Name</label>
+        <input type="text" id="firstname" name="name" placeholder=" FIRST NAME" required>
+    </div>
+    <div>
+        <label for="lastname"><i class="fas fa-user fa-1x"></i>  Last Name</label>
+        <input type="text" id="lastname" name="name" placeholder=" LAST NAME"required>
+    </div>
+    <div>
+        <label for="e-mail"><i class="fas fa-envelope-open-text fa-1x"></i> E-Mail</label>
+        <input type="email" id="e-mail" name="name" placeholder=" E-MAIL ADDRESS" required>
+    </div>
+    <div>
+        <label for="password"><i class="fas fa-unlock-alt fa-1x"></i>  Password</label>
+        <input type="text" id="password" name="name" placeholder=" PASSWORD" required>
+    </div>
+    <div>
+        <label for="conpassword"><i class="fas fa-unlock-alt fa-1x"></i>  Confirm Password</label>
+        <input type="text" id="conpassword" name="name" placeholder="CONFIRM PASSWORD" required>
+    </div>
+
+     <button class="button" onclick="myfunction();">SIGN UP</button>
+    </form>
+   </div>
+</section>
+
+
+<footer>
+    <img src="images/logo-small.png" alt="small logo">
+    <div>
+        <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.twitter.com/" ><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+    </div>
+    <p>Copright &copy CODE TO INSPIRE 2021</p>
+</footer>
+
+
+</body>
