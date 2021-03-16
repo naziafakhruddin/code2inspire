@@ -702,9 +702,10 @@ footer p{
 .container-3d{
   display:flex;
   flex-direction:row;
-  margin:20px;
-  padding:20px;
-  border:2px solid #eee;
+  justify-content:space-between;
+  margin:10px;
+  padding:10px;
+  border-bottom:2px solid #333;
 }
 .cover{
    background:#AA8F66;
@@ -717,13 +718,13 @@ footer p{
 }
 .main{
     padding:20px;
-    margin-right:20px;
+    margin-right:10px;
 
 }
 .author{
     width:60px;
     height:65px;
-    padding:5px;
+    padding:10px;
     margin:5px 5px 0px 0px;
     background:#90708C;
 
@@ -781,7 +782,9 @@ article {
         transform:translateY(0px);
     }
 }
-
+.content1{
+    flex:3
+}
 .content1  h1{
     margin:20px;
     padding:20px;
@@ -791,20 +794,25 @@ article {
 .content1 p{
     margin:10px;
     line-height:30px;
-   
-
 }
 .code{
-    width:300px;
-    height:400px;
-    padding:10px;
-    
+    width:350px;
+    height:300px;
+    padding:10px;  
 }
 .code1{
-    width:300px;
+    width:350px;
     height:500px;
-    padding:10px;
-    
+}
+.code2{
+    width:330px;
+    height:400px;
+    padding:10px; 
+}
+.code3{
+    width:330px;
+    height:400px;
+    padding:10px; 
 }
 figcaption{
     padding-left:30px;
@@ -816,13 +824,15 @@ figcaption{
 }
 .content2{
     flex:4;
-    margin:50px;
-
+    width:100%;
+    font-size:10px;
 }
 .para{
+    margin-right:50px;
     padding:25px;
     background:#AA8F66;
     color:white;
+    font-size:15px;
 }
 .content2  h3{
     padding:50px;

@@ -25,18 +25,5 @@
         confirm(message);
     }
 
-  /*-- Code for enlarging code snippets in Articles page-- */
-   function smallFont(x){
-       x.style.width='300px';
-       x.style.height='400px';
-       x.style.padding='0px';
-       x.style.margin='10px';
-   }
-   function bigFont(x){
-       x.style.width='310px';
-       x.style.height='450px';
-       x.style.padding='2px';
-       x.style.margin='20px';
-   }
-
+  
    

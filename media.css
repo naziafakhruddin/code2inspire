@@ -405,9 +405,10 @@
     .container-3d{
         display:flex;
         flex-direction:column;
+        align-content:center;
         margin:20px;
         padding:20px;
-        border:2px solid #eee;
+        border-bottom:2px solid #333;
       }
       .cover{
          background:#AA8F66;
@@ -449,13 +450,13 @@
           font-size:30px;
           color:gold;
       }
-      small{
+    small{
           padding:10px;
           background:#4682B4;
           color:#fff;
       
       }
-      audio{
+     audio{
           outline:none;
           margin:5px;
           width:100%;
@@ -492,7 +493,7 @@
         background:#AA8F66;
     }
     .content2  h3{
-        padding:50px;
+        padding:20px;
     
     }
     footer{
@@ -686,8 +687,8 @@
         display:flex;
         flex-direction:column;
         margin:20px;
-        padding:10px;
-        border:2px solid #eee;
+        padding:20px;
+        border-bottom:2px solid #333;
     }
     .content1 {
        flex:2;
@@ -750,9 +751,7 @@
       audio{
           outline:none;
           margin:5px;
-          background:#eee;
-          border:2px solid#4682B4;
-          width:80%;
+          width:50%;
       }
       time{
           padding-left:10px;
@@ -761,7 +760,6 @@
           flex:4;
           justify-content:space-between;
       }
-      
       
       .content1  h1{
           margin:20px;
@@ -775,29 +773,44 @@
           margin:20px;
       
       }
-      .code1{
+      .code{
         width:300px;
+        height:300px;
+        padding:10px;  
+    }
+      .code1{
+        width:330px;
         height:500px;
-        padding:10px;
-        
+    }
+     .code2{
+        width:330px;
+        height:400px;
+        padding:10px; 
+    }
+    .code3{
+        width:330px;
+        height:400px;
+        padding:10px; 
     }
       figcaption{
           padding-left:30px;
       }
       .concept{
-          width:300px;
+          width:100%;
           height:200px;
           margin:10px;
       }
       .content2{
           flex:4;
-          margin:50px;
-      
+          margin:10px;
+          width:100%;
       }
       .para{
-          padding:25px;
+          width:100%;
+          padding:5px;
           background:#AA8F66;
           color:white;
+          font-size:12px;
       }
       .content2  h3{
           padding:50px;
