@@ -724,7 +724,7 @@ footer p{
     width:60px;
     height:65px;
     padding:5px;
-    margin:5px;
+    margin:5px 5px 0px 0px;
     background:#90708C;
 
 }
@@ -745,17 +745,19 @@ small{
 audio{
     outline:none;
     margin:5px;
-}
-time{
-    padding-left:15px;
-}
-.3d-article1{
-   flex:4;
-   justify-content:space-evenly;
+    background:#eee;
+    border:2px solid#4682B4;
 
 }
+time{
+    padding-left:10px;
+}
+article {
+    flex:4;
+    justify-content:space-between;
+}
 .image-cube {
-   width:400px;
+   width:300px;
    height:300px;
    margin-bottom:30px;
 }
@@ -780,21 +782,27 @@ time{
     }
 }
 
-.3d-article1 h1{
+.content1  h1{
     margin:20px;
     padding:20px;
     text-transform:uppercase;
-    font-size:70px;
+    font-size:30px;
 }
-.3d-article1 p{
-    margin:50px;
-    line-height:1em;
-    text-align:center;
+.content1 p{
+    margin:10px;
+    line-height:30px;
+   
 
 }
 .code{
-    width:500px;
+    width:300px;
     height:400px;
+    padding:10px;
+    
+}
+.code1{
+    width:300px;
+    height:500px;
     padding:10px;
     
 }
@@ -806,16 +814,17 @@ figcaption{
     height:200px;
     margin:10px;
 }
-.3d-article2{
+.content2{
     flex:4;
     margin:50px;
 
 }
 .para{
-    padding:20px;
-    background:#fff;
+    padding:25px;
+    background:#AA8F66;
+    color:white;
 }
-.3d-article2 h3{
+.content2  h3{
     padding:50px;
 
 }
@@ -842,6 +851,7 @@ figcaption{
     padding:50px;
     box-shadow:0px 8px 16px #333;
     width:100%;
+   
 }
 
 .book-front{
@@ -857,7 +867,7 @@ figcaption{
 .holder1 ,.holder2 ,.holder3{
     display:flex;
     flex-direction:row;
-    color:black;
+   
 }
 .holder2{
     display:flex;
@@ -873,14 +883,17 @@ figcaption{
     padding:20px;
     width:300px;
 }
-pre{
-    font-size:18px;
+pre small{
     color:black;
+    font-size:15px;
+    margin:10px
+    
 }
 .info{
     background:transparent;
 }
 .bok-intro{
+    flex-direction:column;
     margin:5px;
     padding:5px;
     font-size:20px;
@@ -976,9 +989,9 @@ pre{
     box-shadow:0px 4px 6px #333;
 }
 .subscribe label{
-    padding:10px 10px 0px 10px;
-    margin-top:15px;
     display:inline;
+    padding:10px 10px 0px 10px;
+    margin:15px;
     font-family: 'Poppins', sans-serif;
     font-size:16px;
 }
