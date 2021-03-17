@@ -276,10 +276,10 @@
     }
 }
 /*--media min-width 417px--*/
-@media(max-width:414px){
+@media(min-width:417px){
     .banner{
             position:absolute;
-            top:20%;
+            top:30%;
             left:30%;
             transform:translate(-20%,-20%);
         }
