@@ -34,7 +34,7 @@
    } 
 }
 /*--nav media 414px--*/
-@media(max-width:414px){
+@media(max-width:415px){
     #main-nav{
         display:none;
     }
