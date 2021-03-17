@@ -198,7 +198,7 @@
 }
 
 .float:nth-child(1){
-    position:relative;
+    display:inline;
     right:-150px;
     margin:20px;
     animation-delay:1s;
@@ -209,7 +209,7 @@
     
 }
 .float:nth-child(3){
-    position:relative;
+    display:inline;
     left:50px;
     align-items:end;
     margin:20px;
