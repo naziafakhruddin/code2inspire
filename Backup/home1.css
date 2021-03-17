@@ -30,7 +30,7 @@
     margin:2px 2px 10px 2px;
     padding:5px;
     border:2px solid #AA8F66;
-    box-shadow:2px 4px 8px #777;
+    box-shadow:2px 4px 8px #ddd;
 }
 /*--nav media 415px--*/
 @media(min-width:417px){
