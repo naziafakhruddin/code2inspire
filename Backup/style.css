@@ -279,7 +279,7 @@
 @media(min-width:417px){
     .banner{
             position:absolute;
-            top:50%;
+            top:80%;
             left:30%;
             transform:translate(-20%,-20%);
         }
