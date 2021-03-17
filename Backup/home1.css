@@ -26,11 +26,15 @@
   padding-bottom:5px;
   border-bottom:2px solid teal;
 }
-#small-nav{
+
+/*--nav media 414px--*/
+@media(min-width:414px){
+   #small-nav{
     display:none;
+   } 
 }
-/*--nav media 375px--*/
-@media(max-width:375px){
+/*--nav media 414px--*/
+@media(max-width:414px){
     #main-nav{
         display:none;
     }
