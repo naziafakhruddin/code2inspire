@@ -282,13 +282,14 @@
 @media(max-width:414px){
     #section0{
         display:flex;
+        flex-wrap:wrap;
         justify-content:center;
         align-items:center;
         background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
     }
     .banner{
         position:absolute;
-        top:80%;
+        top:50%;
         left:30%;
         transform:translate(-20%,-20%);
     }
