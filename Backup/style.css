@@ -191,6 +191,8 @@
     padding:0;
     margin:0;
     font-size:30px;
+    font-family: 'Poppins', sans-serif;
+    color:#AA8F66;
 }
 .word::before{
     content:'';
@@ -205,16 +207,6 @@
     }
     100%{
         content:'Build';
-    }
-}
-
-@keyframes banner{
-    0%{
-       font-size:0px;
-      
-    }
-    100%{
-     font-size:50px;
     }
 }
 .animation{
