@@ -81,6 +81,7 @@
   flex-direction:row;
   align-content:start;
   margin:20px 0px 5px 50px;
+  border-bottom:2px solid #90708C;
 }
 .logo .first{
     flex:1;
@@ -128,7 +129,7 @@
       flex-direction:column;
       align-content:start;
       margin:5px 0px 5px 5px;
-      border:2px solid #90708C;
+      border-bottom:2px solid #90708C;
     }
     .logo .first{
         flex:1;
@@ -151,7 +152,6 @@
         font-family: 'Noto Sans', sans-serif;
         font-weight:bold;
         color:#4682B4;
-        text-transform:UPPERCASE;
     }
     .logo p{
         flex:2;
