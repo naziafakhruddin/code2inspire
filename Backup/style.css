@@ -95,7 +95,7 @@
     flex:1;
     color:#AA8F66;
     font-size:60px;
-    margin:0px 2px 0px 2px;
+    margin:0px 0px 0px 2px;
 }
 .logo .second{
     flex:1;
@@ -112,4 +112,41 @@
     font-size:20px;
     font-family: 'Poppins', sans-serif;
 }
-
+/*--logo media 414px--*/
+@media(max-width:414px){
+    .logo {
+      display:flex;
+      flex-direction:column;
+      align-content:start;
+      margin:5px 0px 5px 5px;
+    }
+    .logo .first{
+        flex:1;
+        font-size:30px;
+        font-family: 'Noto Sans', sans-serif;
+        font-weight:bold;
+        color:#0D5C63;
+        margin:10px;
+    }
+    .logo span{
+        flex:1;
+        color:#AA8F66;
+        font-size:40px;
+        margin:0px 0px 0px 2px;
+    }
+    .logo .second{
+        flex:1;
+        font-size:30px;
+        font-family: 'Noto Sans', sans-serif;
+        font-weight:bold;
+        color:#4682B4;
+        text-transform:UPPERCASE;
+    }
+    .logo p{
+        flex:2;
+        align-content:center;
+        justify-content:center;
+        font-size:10px;
+        font-family: 'Poppins', sans-serif;
+    }
+}
