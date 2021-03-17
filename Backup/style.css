@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Noto+Sans:wght@700&family=Poppins:wght@300&display=swap');
 /*--Navigation--*/
 /*--big screen navigation code--*/
 #main-nav{
@@ -77,5 +78,17 @@
 /*--Navigation code ends--*/
 /*--Logo code--*/
 .logo {
-    
+  display:flex;
+  align-content:center;
+  margin-top:50px;
 }
+.logo h1{
+    font-size:50px;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight:bold;
+    color:#0D5C63;
+}
+.logo span{
+    color:#4682B4;
+}
+
