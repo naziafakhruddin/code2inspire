@@ -194,7 +194,7 @@
     font-family: 'Poppins', sans-serif;
     color:#AA8F66;
 }
-.word::before{
+.words::before{
     content:'';
     animation:banner 5s infinite;
 }
