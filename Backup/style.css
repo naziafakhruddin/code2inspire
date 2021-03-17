@@ -84,7 +84,7 @@
 }
 .logo .first{
     flex:1;
-    font-size:50px;
+    font-size:30px;
     font-family: 'Noto Sans', sans-serif;
     font-weight:bold;
     color:#0D5C63;
@@ -93,12 +93,12 @@
 .logo span{
     flex:1;
     color:#AA8F66;
-    font-size:60px;
+    font-size:40px;
     margin:0px 0px 0px 2px;
 }
 .logo .second{
     flex:1;
-    font-size:50px;
+    font-size:30px;
     font-family: 'Noto Sans', sans-serif;
     font-weight:bold;
     color:#4682B4;
