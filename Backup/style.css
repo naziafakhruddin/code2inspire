@@ -81,7 +81,6 @@
   flex-direction:row;
   align-content:start;
   margin:20px 0px 5px 50px;
-  animation:logo 1s ease-in ; 
 }
 .logo .first{
     flex:1;
@@ -96,6 +95,7 @@
     color:#AA8F66;
     font-size:40px;
     margin:0px 0px 0px 2px;
+    animation:logo 1s ease-in ; 
 }
 .logo .second{
     flex:1;
@@ -128,7 +128,6 @@
       flex-direction:column;
       align-content:start;
       margin:5px 0px 5px 5px;
-      animation:logo 1s ease-in ; 
     }
     .logo .first{
         flex:1;
@@ -143,6 +142,7 @@
         color:#AA8F66;
         font-size:25px;
         margin:0px 0px 0px 2px;
+        animation:logo 1s ease-in ; 
     }
     .logo .second{
         flex:1;
