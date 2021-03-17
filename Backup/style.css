@@ -279,8 +279,11 @@
 }
 */
 .float{
-    width:200px;
-    height:300px;
+    position:absolute;
+    top:30%;
+    left:65%;
+    width:300px;
+    height:400px;
     animate:balloon 2s linear;
 }
 .float:hover{
@@ -290,8 +293,11 @@
     0%{
         transform:translateY(60px);
     }
+    50%{
+        transform:translateY(30px);
+    }
     100%{
-        transform:translateY(0px);
+        transform:translateY(10px);
     }
 }
 /*--media min-width 417px--*/
