@@ -1,3 +1,4 @@
+/*--navigation--*/
 nav{
     display:flex;
     flex-wrap:wrap;
@@ -18,6 +19,28 @@ nav a{
    text-decoration:none;
    color:#4682B4;
    font-family: 'Poppins', sans-serif;
+
+}
+nav li a:hover{
+  color:teal;
+  padding-bottom:5px;
+  border-bottom:2px solid teal;
+
+}
+/*--nav media 375px--*/
+nav li{
+    list-style:none;
+    display:inline;
+    padding:5px;
+    color:#4682B4;
+    margin:0px;
+
+}
+nav a{
+   text-decoration:none;
+   color:#4682B4;
+   font-family: 'Poppins', sans-serif;
+   font-size:12px;
 
 }
 nav li a:hover{
