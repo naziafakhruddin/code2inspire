@@ -174,35 +174,103 @@
     display:flex;
     justify-content:center;
 }
-#section0 h1{
-    font-size:30px;
-    font-family: 'Poppins', sans-serif;
+#section0{
+    display:flex;
+    justify-content:center;
     align-items:center;
+    background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
 }
-#section0 img{
-    width:200px;
-    height:200px;
+.banner{
+    width:100%;
+    height:700px;
+    position:absolute;
+    bottom:-200px;
+    left:-50px;
+    margin:20px;
+    
 }
-#section0 img:hover{
-  animation:balloon 2s linear;  
+.banner h1{
+    text-align:center;
+    font-family: 'Noto Sans', sans-serif;
+    font-size:60px;
+    font-weight:bold;
+    text-shadow:0px 2px 4px #eee;
+    color:#fff;
+    animation:banner 1s ease-in ; 
+} 
+@keyframes banner{
+    0%{
+       font-size:0px;
+      
+    }
+    100%{
+     font-size:50px;
+    }
 }
 .animation{
    width:100%;
    height:700px;
-   display:inline;
    position:relative;
    margin-top:20px;
    
 }
-.float{
-    animation:balloon 2s linear;
+.square{
+    position:absolute;
+    top:30%;
+    left:45%;
+    width:20px;
+    height:20px;
+    border-radius:5%;
+    box-shadow:0px 2px 18px #777;
+    transform:rotateZ(230deg) ;
+    animation:size 2s linear infinite;
 }
 
-@keyframes balloon{
+.square:nth-child(1){
+    padding:80px;
+    border:8px solid #eee;
+    margin:5px;
+    animation-delay:1s;
+}
+.square:nth-child(2){
+    padding:60px;
+    border:8px solid #FFFF00;
+    animation-delay:3s;
+    
+}
+.square:nth-child(3){
+    padding:40px;
+    border:8px solid turquoise;
+    animation-delay:5s;
+}
+.square:nth-child(4){
+    padding:20px;
+    border:8px solid #B0E0E6;
+    animation-delay:7s;
+}
+.square:nth-child(5){
+    padding:5px;
+    border:8px solid #DB7093;
+    animation-delay:1s;
+}
+
+@keyframes size{
     0%{
-        transform:translateY(60px);
+        width:0px;
+        height:0px;
+        transform:rotateZ(180deg);
     }
+    50%{
+        width:50px;
+        height:50px;
+        transform:rotateZ(360deg);
+    }
+    
     100%{
-        transform:translateY(-60px);
+        width:0px;
+        height:0px;
+        transform:rotateZ(180deg);
+        
     }
+    
 }
