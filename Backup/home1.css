@@ -38,6 +38,13 @@
     #main-nav{
         display:none;
     }
+    #small-nav{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    background:transparent;
+    padding:5px;
+   }
     #small-nav li{
         list-style:none;
         display:inline;
