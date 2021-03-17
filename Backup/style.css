@@ -194,13 +194,14 @@
    
 }
 .float{
-    position:relative;
+    position:absolute;
     animation:balloon 2s linear;
 }
 
 .float:nth-child(1){
     position:relative;
     align-items:start;
+    right:-50px;
     margin:20px;
     animation-delay:1s;
 }
@@ -213,6 +214,7 @@
 }
 .float:nth-child(3){
     position:relative;
+    left:50px;
     align-items:end;
     margin:20px;
     animation-delay:5s;
