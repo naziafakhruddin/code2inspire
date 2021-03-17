@@ -168,3 +168,10 @@
     }
   }
 }
+/*--logo code ends--*/
+/*--section0- Banner--*/
+#section0{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
