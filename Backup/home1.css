@@ -27,14 +27,14 @@
   border-bottom:2px solid teal;
 }
 
-/*--nav media 414px--*/
-@media(min-width:414px){
+/*--nav media 415px--*/
+@media(min-width:415px){
    #small-nav{
     display:none;
    } 
 }
 /*--nav media 414px--*/
-@media(max-width:415px){
+@media(max-width:414px){
     #main-nav{
         display:none;
     }
