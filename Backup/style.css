@@ -128,6 +128,7 @@
       flex-direction:column;
       align-content:start;
       margin:5px 0px 5px 5px;
+      border:2px solid #90708C;
     }
     .logo .first{
         flex:1;
