@@ -28,7 +28,7 @@ nav li a:hover{
 
 }
 /*--nav media 375px--*/
-nav li{
+#small-nav li{
     list-style:none;
     display:inline;
     padding:5px;
@@ -36,14 +36,14 @@ nav li{
     margin:0px;
 
 }
-nav a{
+#small-nav a{
    text-decoration:none;
    color:#4682B4;
    font-family: 'Poppins', sans-serif;
    font-size:12px;
 
 }
-nav li a:hover{
+#small-nav li a:hover{
   color:teal;
   padding-bottom:5px;
   border-bottom:2px solid teal;
