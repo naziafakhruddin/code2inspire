@@ -26,7 +26,11 @@
   padding-bottom:5px;
   border-bottom:2px solid teal;
 }
-
+.currentpg{
+    margin:5px;
+    padding:5px;
+    border:2px solid #0D5C63;
+}
 /*--nav media 415px--*/
 @media(min-width:417px){
    #small-nav{
