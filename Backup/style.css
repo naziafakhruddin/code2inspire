@@ -198,19 +198,22 @@
     animation:balloon 2s linear;
 }
 
-.square:nth-child(1){
+.float:nth-child(1){
     position:relative;
+    align-items:start;
     margin:20px;
     animation-delay:1s;
 }
-.square:nth-child(2){
+.float:nth-child(2){
     position:relative;
+    align-items:center;
     margin:20px;
     animation-delay:3s;
     
 }
-.square:nth-child(3){
+.float:nth-child(3){
     position:relative;
+    align-items:end;
     margin:20px;
     animation-delay:5s;
 }
