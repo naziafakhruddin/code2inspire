@@ -1,5 +1,5 @@
 /*--navigation--*/
-nav{
+#main-nav{
     display:flex;
     flex-wrap:wrap;
     justify-content:center;
@@ -7,7 +7,7 @@ nav{
     padding:5px;
 
 }
-nav li{
+#main-nav li{
     list-style:none;
     display:inline;
     padding:5px;
@@ -15,20 +15,20 @@ nav li{
     margin:0px;
 
 }
-nav a{
+#main-nav a{
    text-decoration:none;
    color:#4682B4;
    font-family: 'Poppins', sans-serif;
 
 }
-nav li a:hover{
+#main-nav li a:hover{
   color:teal;
   padding-bottom:5px;
   border-bottom:2px solid teal;
 
 }
 /*--nav media 375px--*/
-nav{
+#main-nav{
     display:none;
 }
 #small-nav li{
