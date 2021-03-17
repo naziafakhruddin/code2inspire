@@ -194,20 +194,16 @@
    
 }
 .float{
-    position:absolute;
     animation:balloon 2s linear;
 }
 
 .float:nth-child(1){
     position:relative;
-    align-items:start;
-    right:-50px;
+    right:-150px;
     margin:20px;
     animation-delay:1s;
 }
 .float:nth-child(2){
-    position:relative;
-    align-items:center;
     margin:20px;
     animation-delay:3s;
     
