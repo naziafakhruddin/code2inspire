@@ -1,0 +1,27 @@
+nav{
+    display:flex;
+    flex-wrap:wrap;
+    background:transparent;
+    padding:5px;
+
+}
+nav li{
+    list-style:none;
+    display:inline;
+    padding:5px;
+    color:#4682B4;
+    margin:0px;
+
+}
+nav a{
+   text-decoration:none;
+   color:#4682B4;
+   font-family: 'Poppins', sans-serif;
+
+}
+nav li a:hover{
+  color:teal;
+  padding-bottom:5px;
+  border-bottom:2px solid teal;
+
+}
