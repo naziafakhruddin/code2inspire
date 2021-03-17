@@ -28,7 +28,7 @@
 }
 
 /*--nav media 415px--*/
-@media(min-width:415px){
+@media(min-width:417px){
    #small-nav{
     display:none;
    } 
@@ -57,7 +57,7 @@
        text-decoration:none;
        color:#4682B4;
        font-family: 'Poppins', sans-serif;
-       font-size:15px;
+       font-size:18px;
     }
     #small-nav li a:hover{
       color:teal;
