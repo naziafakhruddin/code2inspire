@@ -28,6 +28,9 @@ nav li a:hover{
 
 }
 /*--nav media 375px--*/
+nav{
+    display:none;
+}
 #small-nav li{
     list-style:none;
     display:inline;
