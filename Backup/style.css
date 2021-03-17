@@ -173,19 +173,18 @@
 #section0{
     display:flex;
     justify-content:center;
-    align-items:center;
-    
 }
 #section0 h1{
     font-size:30px;
     font-family: 'Poppins', sans-serif;
+    align-items:center;
 }
 #section0 img{
     width:200px;
     height:200px;
 }
 #section0 img:hover{
-    
+  animation:balloon 2s linear;  
 }
 .animation{
    width:100%;
@@ -195,20 +194,23 @@
    
 }
 .float{
-    position:absolute;
+    position:relative;
     animation:balloon 2s linear;
 }
 
 .square:nth-child(1){
+    position:relative;
     margin:20px;
     animation-delay:1s;
 }
 .square:nth-child(2){
+    position:relative;
     margin:20px;
     animation-delay:3s;
     
 }
 .square:nth-child(3){
+    position:relative;
     margin:20px;
     animation-delay:5s;
 }
