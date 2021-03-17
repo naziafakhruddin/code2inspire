@@ -279,9 +279,12 @@
 }
 */
 .float{
-    width:150px;
-    height:150px;
-    animate:balloon 5s linear;
+    width:200px;
+    height:300px;
+    animate:balloon 2s linear;
+}
+.float:hover{
+    transform:translateX(50px);
 }
 @keyframe balloon{
     0%{
