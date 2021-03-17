@@ -89,13 +89,13 @@
     font-weight:bold;
     color:#0D5C63;
     margin:10px;
+    animation:logo 1s ease-in ; 
 }
 .logo .mid{
     flex:1;
     color:#AA8F66;
-    font-size:40px;
+    font-size:35px;
     margin:0px 0px 0px 2px;
-    animation:logo 1s ease-in ; 
 }
 .logo .second{
     flex:1;
@@ -137,13 +137,13 @@
         font-weight:bold;
         color:#0D5C63;
         margin:10px;
+        animation:logo 1s ease-in ; 
     }
     .logo .mid{
         flex:1;
         color:#AA8F66;
-        font-size:25px;
-        margin:0px 0px 0px 2px;
-        animation:logo 1s ease-in ; 
+        font-size:20px;
+        margin:0px 0px 0px 2px; 
     }
     .logo .second{
         flex:1;
@@ -163,7 +163,6 @@
     @keyframes logo{
     0%{
        font-size:0px;
-      
     }
     100%{
      font-size:20px;
