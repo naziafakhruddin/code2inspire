@@ -25,7 +25,9 @@
   color:teal;
   padding-bottom:5px;
   border-bottom:2px solid teal;
-
+}
+#small-nav{
+    display:none;
 }
 /*--nav media 375px--*/
 @media(max-width:375px){
