@@ -79,8 +79,10 @@
 /*--Logo code--*/
 .logo {
   display:flex;
+  flex-wrap:wrap;
   align-content:center;
   margin-top:50px;
+  flex:1;
 }
 .logo h1{
     font-size:50px;
@@ -90,5 +92,11 @@
 }
 .logo span{
     color:#4682B4;
+    font-size:60px;
+    margin:5px;
 }
-
+.logo p{
+    flex:2;
+    font-size:20px;
+    font-family: 'Poppins', sans-serif;
+}
