@@ -84,16 +84,22 @@
   margin-top:50px;
   flex:1;
 }
-.logo h1{
+.logo .first{
     font-size:50px;
     font-family: 'Noto Sans', sans-serif;
     font-weight:bold;
     color:#0D5C63;
 }
 .logo span{
-    color:#4682B4;
+    color:#AA8F66;
     font-size:60px;
     margin:5px;
+}
+.logo .second{
+    font-size:50px;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight:bold;
+    color:#4682B4;
 }
 .logo p{
     flex:2;
