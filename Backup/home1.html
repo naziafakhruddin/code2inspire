@@ -1,4 +1,4 @@
-<html lang="en">
+<html>
 <head>
     <title>Coding Magazine</title>
     <meta charset="UTF-8">
@@ -12,7 +12,7 @@
     <link rel="stylesheet" type="text/css" href="media.css"/>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
-    <script src="script.js"></script>
+    <!--<script src="script.js"></script>-->
 
 </head>
 <body>
@@ -50,21 +50,64 @@
    </div>
 </div>
 </header> 
-         
+<!--Section0 Banner-->         
 <section id="section0">
+    <!--Animated balloons on the banner-->
      <div class="animation">
-         <!--
-         <div class="square"></div>
-         <div class="square"></div>
-         <div class="square"></div>
-         <div class="square"></div>
-         <div class="square"></div>
-        -->
-         <img class="float" src="balloon.svg">
+         <img class="float1" src="balloon.svg" alt="floating balloon">
      </div>
-     <div class="banner">
+     <div class="animation">
+        <img class="float2" src="balloon2.svg" alt="floating balloon">
+    </div>
+    <!--Animated words on the banner-->
+    <div class="banner">
          <h2><span class="words"><em></em></span> WITH CODE</h2>
-    </div> 
+    </div>  
 </section>
 
-          
+<!--Section1 Editors Pick-->
+<main id="section1">
+    <h1 class="main-heading">
+        EDITOR'S PICK
+    </h1>
+    <div class="main-article">
+        <div class="main-image">
+           <img src="3dcube.png"alt="3d box">
+        </div>
+        <div class="main-para">
+            <h2>
+                Creating 2D texture on a 3D shape in p5.js
+            </h2>
+            <p>
+                Creating a dynamic 2D texture to the 3D object . It can be simple sketch
+                to a very sophisticated design pattern using simple programming in p5.js.
+            </p>
+            <a class="btn" href="articles.html">
+                READ MORE
+            </a>
+        </div>
+    </div>
+</main>
+<!--Section2 Video Tutorials--> 
+<section id="section2">
+    <h1 class="heading"> VIDEO TUTORIALS </h1>
+     <div class="article2">
+        <div class="para-two">
+             <h3>
+                 Forest with simple shapes tutorial in Blender 2.8
+             </h3>
+             <p>
+                 In this video , I am using basic shapes to to create a forest in Blender 2.8.
+            </p>
+             <a class="btn" href="videos.html">
+                 WATCH NOW
+             </a>
+        </div>
+        <div class="image-two">
+            <iframe class="vt" src="https://www.youtube-nocookie.com/embed/VfFLrv2KirI" allow="accelerometer; autoplay;" allowfullscreen>
+            </iframe>
+        </div>
+      </div>
+</section>         
+</body>
+</html>
