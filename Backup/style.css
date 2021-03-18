@@ -284,20 +284,18 @@
     left:65%;
     width:300px;
     height:400px;
-    animate:balloon 2s linear;
+    animate:balloon 2s linear infinite;
 }
-.float:hover{
-    transform:translateY(50px);
-}
+
 @keyframe balloon{
     0%{
-        transform:translateY(10px);
+        transform:translateY(-10px);
     }
     50%{
-        transform:translateY(30px);
+        transform:translateY(-30px);
     }
     100%{
-        transform:translateY(60px);
+        transform:translateY(-60px);
     }
 }
 /*--media min-width 417px--*/
