@@ -27,6 +27,7 @@ h3{
     color:#fff;
     width:100%;
     margin:0px;
+    padding:20px;
 }
 p{
     font-family: 'Poppins', sans-serif;
@@ -898,10 +899,13 @@ a .btn{
 
 /*----------------Videos Page--------------------------------*/
 .resource{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-self:center;
     width:100%;
-    height:200px;
-    padding:20px;
-    margin:50px 0px 80px 0px;
+    height:300px;
+    margin:20px;  
     
 }
 .container-1{
@@ -1147,11 +1151,13 @@ a .btn{
 /*-- Videos Page @media(max-width:414px)--*/
 @media(max-width:414px){
     .resource{
+        display:flex;
+        justify-content:center;
+        align-content:center;
         width:150px;
         height:100px;
         padding:15px;
         margin:50px 0px 50px 20px;
-        
     }
 
     .container-1{
@@ -1398,5 +1404,294 @@ a .btn{
         height:100%;
         padding:5px;
         margin:20px;
+    }
+}
+/*--Get In Touch Section--*/
+main-intouch{
+    overflow-x:hidden;
+    margin:0;
+
+}
+.mail{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:flex-start;
+    align-self:center;
+    width:100%;
+    height:300px;
+    margin:20px;  
+}
+
+.in-touch1{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items: center;
+    margin-top:50px;
+    padding:50px;
+    height:300px;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+    background:#AA8F66;
+    color:#fff;
+    font-size:17px;
+    box-shadow:0px 4px 8px #ccc;
+    animation:sign ease-in 1s;
+}
+
+.in-touch2{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items: center;
+    margin:10px 0px 10px 0px;
+    padding:80px;
+    height:300px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+    background:#90708C;
+    color:#fff;
+    font-size:17px;
+    box-shadow:10px 4px 6px #ccc;
+    animation:sign ease-in 1s;
+}
+
+@keyframes sign{
+    0%{
+        font-size:0px;  
+    }
+    100%{
+        font-size:15px; 
+    }
+}
+.contact{
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction:column;
+    justify-content:space-around;
+    align-items: center;
+    padding:5px;
+    background:#0D5C63;
+    font-size:20px;
+    color:#fff;
+    font-weight:bold;
+    background-image:url("contact.svg");
+    background-size:250px;
+    background-repeat:no-repeat;
+    background-position:center;
+    max-width:100%;
+    height:400px;
+    box-shadow:0px 4px 8px #ccc;
+}
+.sign-up{
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:flex-start;
+    margin:50px;
+    padding:10px;
+    background-image:url("signup.svg");
+    background-repeat:no-repeat;
+    background-position:top right;
+    background-size:500px;
+    
+}
+
+.subscribe{
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:flex-start;
+    background:#AA8F66;
+    opacity:0.8;
+    margin:20px;
+    padding:20px;
+    border:2px solid #4682B4;
+    line-height:2em;
+    color:#fff;
+    width:400px;
+    font-size:20px;
+    box-shadow:0px 4px 6px #333;
+}
+.subscribe label{
+    display:inline;
+    padding:10px 10px 0px 10px;
+    margin:15px;
+    font-family:'Poppins', sans-serif;
+    font-size:18px;
+    font-weight:bold;
+    text-shadow:0px 4px 6px #333;
+}
+.icon{
+    color:#fff;
+    letter-spacing:6px;
+    text-shadow:0px 4px 6px #333;
+}
+.subscribe input{
+    width:100%;
+    padding:10px;
+
+}
+.button{
+    margin-top:20px;
+    color:#fff;
+    font-size:20px;
+    text-shadow:0px 4px 6px #333;
+    padding:10px;
+    width:100%;
+    background:#4682B4;
+    box-shadow:0px 4px 6px #333;
+}
+.button:hover{
+    margin-top:20px;
+    color:yellow;
+    font-size:20px;
+    padding:10px;
+    width:100%;
+    background:teal;
+}
+
+/*--Get In Touch media(max-width:414px)---*/
+@media(max-width:414px){
+    .mail{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:flex-start;
+        align-self:center;
+        width:100%;
+        height:150px;
+        margin:10px;  
+    }
+
+    .in-touch1{
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items: center;
+        margin:0px;
+        padding:15px;
+        height:300px;
+        width:100%;
+        clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+        background:#AA8F66;
+        color:#fff;
+        font-size:12px;
+        box-shadow:0px 4px 8px #ccc;
+        animation:sign ease-in 1s;
+    }
+
+    .in-touch2{
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        margin:0px 0px 0px 0px;
+        padding:15px;
+        width:100%;
+        height:300px;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+        background:#90708C;
+        color:#fff;
+        font-size:12px;
+        box-shadow:10px 4px 6px #ccc;
+        animation:sign ease-in 1s;
+    }
+
+    @keyframes sign{
+        0%{
+            font-size:0px;  
+        }
+        100%{
+            font-size:15px; 
+        }
+    }
+    .contact{
+        display:flex;
+        flex-wrap:wrap;
+        flex-direction:column;
+        justify-content:space-around;
+        align-items:center;
+        margin:20px 5px 10px 5px;
+        padding:5px;
+        background:#0D5C63;
+        width:100%;
+        height:500px;
+        font-size:15px;
+        color:yellow;
+        font-weight:bold;
+        background-image:url("contact.svg");
+        background-size:200px;
+        background-repeat:no-repeat;
+        background-position:center;
+        box-shadow:0px 4px 8px #ccc;
+        text-shadow:0px 4px 6px #333;
+    }
+    .sign-up{
+        display:flex;
+        flex-wrap:wrap;
+        flex-direction:column;
+        justify-content:space-between;
+        align-items:flex-start;
+        margin:30px;
+        padding:10px;
+        background-image:url("signup.svg");
+        background-repeat:no-repeat;
+        background-position:right bottom;
+        background-size:100%;
+    }
+
+    .subscribe{
+        display:flex;
+        flex-wrap:wrap;
+        flex-direction:row;
+        justify-content:center;
+        align-items:flex-start;
+        background:transparent;
+        opacity:0.8;
+        margin:5px;
+        padding:15px;
+        background:#AA8F66;
+        border:2px solid #4682B4;
+        line-height:2em;
+        color:#fff;
+        font-weight:bold;
+        width:100%;
+        box-shadow:0px 4px 6px #333;
+    }
+    .subscribe label{
+        display:inline;
+        padding:5px 5px 0px 5px;
+        margin:10px;
+        font-family:'Poppins', sans-serif;
+        font-size:14px;
+        text-shadow:0px 4px 6px #333;
+    }
+    .icon{
+        color:#4682B4;
+        letter-spacing:5px;
+        text-shadow:0px 4px 6px #333;
+    }
+    .subscribe input{
+        width:100%;
+        padding:10px;
+
+    }
+    .button{
+        margin-top:20px;
+        color:#fff;
+        font-size:18px;
+        padding:10px;
+        width:100%;
+        background:#4682B4;
+        box-shadow:0px 4px 6px #333;
+        text-shadow:0px 4px 6px #333;
+    }
+    .button:hover{
+        margin-top:20px;
+        color:yellow;
+        font-size:18px;
+        padding:10px;
+        width:100%;
+        background:teal;
     }
 }
