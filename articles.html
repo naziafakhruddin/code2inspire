@@ -1,45 +1,60 @@
-<html lang="en">
-
+<html>
 <head>
     <title>Coding Magazine</title>
     <meta charset="UTF-8">
     <meta name="description" content="Magazine">
-    <meta name="author" content="Programming tutorials">
+    <meta name="author" content="Programming tutorials"> 
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <meta name="refresh" content="600">
     <meta name="keywords" content="coding,programming tutorials">
     <meta name="robots" content="onindex,nofollow">
     <link rel="stylesheet" type="text/css" href="style.css"/>
-    <link rel="stylesheet" type="text/css" href="media.css"/>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
     <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.2.0/p5.js"></script>
 
 </head>
 <body>
-<!-- Accessibity features <article>,<small>,<figure>,<figcaption>,<audio>,<source>,<time> and javascript to enlarge the code snippet for accessibity.h1,h2,h3,small,sup,a and p tags are also used. -->
+<!-- For accessibity header,nav,main ,section ,footer tag and alt is used in img tag.iframe tag for the video h1,h2,h3,ul,li,a and p tags are used.Jvascript script is used in the more articles section to enlarge the images --> 
 <header>
-<nav>
+<!--Navigation-->
+<nav id="main-nav">
     <ul>
         <li><a href="index.html">HOME</a></li>
-        <li><a href="articles.html">ARTICLES</a></li>
+        <li><a class="currentpg" href="articles.html">ARTICLES</a></li>
         <li><a href="videos.html">VIDEOS</a></li>
         <li><a href="books.html">BOOKS</a></li>
         <li><a href="contact.html">GET IN TOUCH</a></li>
     </ul>
 </nav>
-<div id="progress"></div>
-<div id="scrollbar"></div>
-<div id="move"></div>
+<nav id="small-nav">
+    <ul>
+        <li><a class="currentpg" href="index.html"><i class="fas fa-home"></i></a></li>
+        <li><a href="articles.html"><i class="far fa-newspaper"></i></a></li>
+        <li><a href="videos.html"><i class="fas fa-video"></i></a></li>
+        <li><a href="books.html"><i class="fas fa-book"></i></a></li>
+        <li><a href="contact.html"><i class="fas fa-envelope-open-text"></i></a></li>
+    </ul>    
+</nav>
+
+<!--Logo code-->
 <div class="logo">
-    <img src="images/logo.png" alt="logo of the website">
+    <h1 class="first"> 
+        CODE 
+        <span class="mid">T<i class="fas fa-mouse"></i><span>
+        <span class="second">INSPIRE<span>
+    <h1>
+   <div>        
+    <p>ISSUE 1 / 2021</p>
+   </div>
 </div>
 </header>
 <h1 class="headings">ARTICLES</h1>  
  <div class="container-3d">
     <article class="content1">
          <h3 class="cover">COVER FEATURE</h3>
-         <img class="image-cube" src="images/cube.svg" alt="cubes picture">
+         <div id="3D"></div>
          <h1>
              Creating 2D texture on a 3D shape in p5.js.
          </h1>
@@ -218,14 +233,22 @@
 
  </div>
  <footer>
-    <img src="images/logo-small.png" alt="small logo">
+    <div class="logo-small"> 
+        <h3 class="first"> 
+            CODE 
+            <span class="mid">T<i class="fas fa-mouse"></i><span>
+            <span class="second">INSPIRE<span>
+        <h3>
+    </div>
     <div>
         <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
         <a href="https://www.twitter.com/" ><i class="fab fa-twitter"></i></a>
         <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
     </div>
     <p>Copright &copy CODE TO INSPIRE 2021</p>
-</footer>
+</footer>      
+</body>
+</html>
 
 
  </body>

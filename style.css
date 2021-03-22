@@ -3,8 +3,6 @@
     box-sizing:border-box;
     margin:auto;
     padding:auto;
-
-
 }
 body{
 
@@ -112,6 +110,12 @@ a{
       font-size:35px;
       margin:0px 0px 0px 2px;
   }
+  .logo .mid .fas fa-mouse{
+    flex:1;
+    color:#AA8F66;
+    font-size:36px;
+    margin:0px;
+  }
   .logo .second{
       flex:1;
       font-size:35px;
@@ -120,6 +124,7 @@ a{
       color:#4682B4;
       text-transform:UPPERCASE;
   }
+  
   .logo p{
       flex:2;
       align-items:end;
@@ -761,7 +766,7 @@ a .btn{
         margin:0px;
         animation:logo 1s ease-in ;
     }
-    .logo-small  i{
+    .logo-small  .fas fa-mouse{
         flex:1;
         color:#AA8F66;
         font-size:21px;

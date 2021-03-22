@@ -25,6 +25,8 @@ h3{
 .headings{
     background:#0D5C63;
     color:#fff;
+    width:100%;
+    margin:0px;
 }
 p{
     font-family: 'Poppins', sans-serif;
@@ -32,6 +34,7 @@ p{
 a{
     font-family: 'Noto Sans', sans-serif;
 }
+
 
 /*--Navigation--*/
 /*--big screen navigation code--*/
@@ -55,7 +58,7 @@ a{
    text-decoration:none;
    color:#4682B4;
    font-family: 'Poppins', sans-serif;
-   font-size:18px;
+   font-size:15px;
 }
 #main-nav li a:hover{
   color:teal;
@@ -174,11 +177,18 @@ a{
         margin:10px;
         animation:logo 1s ease-in ; 
     }
-    .logo .mid{
+    .logo .mid {
         flex:1;
         color:#AA8F66;
         font-size:20px;
         margin:0px 0px 0px 2px; 
+        animation:logo 1s ease-in ;
+    }
+    .fas fa-mouse{
+        flex:1;
+        color:#AA8F66;
+        font-size:21px;
+        margin:0px;
         animation:logo 1s ease-in ;
     }
     .logo .second{
@@ -887,38 +897,50 @@ a .btn{
 /*-------------------------Home Page Code----------------------------*/
 
 /*----------------Videos Page--------------------------------*/
+.resource{
+    width:100%;
+    height:200px;
+    padding:20px;
+    margin:50px 0px 80px 0px;
+    
+}
 .container-1{
     display:flex;
     flex-direction:row;
     flex-wrap:wrap;
     justify-content:space-around;
     border:1px solid #ccc;
-    margin:100px;
+    margin:40px;
+    padding:20px;
     background:#90708C;
     color:#fff;
 }
-
 .box-1{
     flex:1;
+    padding:5px;
+    margin:30px 30px 30px 50px;
 }
 .box-1 iframe{
-    flex-wrap:wrap;
-    width:100%;
-    height:400px;
-    flex-basis:20%;
-    background-image:url("video1.png");
-    background-size:100% 100%;
-    background-repeat:no-repeat;
+    width:300px;
+    height:220px;
 }
 .box-2{
     flex:1;
+    padding:20px ;
+    margin:20px;
 }
 .box-2 p{
-    padding:50px;
+    flex-direction:column;
+    font-size:15px;
+    margin:5px;
+    padding:5px;
 }
 .box-2 h3{
-   text-align:center;
-   margin-top:50px;
+    flex-direction:column;
+    text-align:center;
+    font-size:20px;
+    padding:10px;
+    margin:20px;
 }
 .container-2{
     display:flex;
@@ -926,33 +948,39 @@ a .btn{
     flex-wrap:wrap;
     justify-content:space-around;
     border:1px solid #ccc;
-    margin:100px;
+    margin:40px;
+    padding:20px;
     background:#AA8F66;
     color:#fff;
 }
 .box-3{
     flex:1;
-    order:2;
+    padding:5px;
+    margin:30px 30px 30px 50px;
 }
 .box-3 iframe{
-    flex-wrap:wrap;
-    width:100%;
-    height:400px;
-    flex-basis:20%;
-    background-image:url("video2.png");
-    background-size:120% 98%;
-    background-repeat:no-repeat;
+    width:300px;
+    height:220px;
+    
 }
 .box-4{
     flex:1;
     order:1;
+    padding:20px;
 }
 .box-4 p{
-    padding:50px;
+    flex-direction:column;
+    font-size:15px;
+    margin:5px;
+    padding:5px;
+    
 }
 .box-4 h3{
-   text-align:center;
-   margin-top:50px;
+    flex-direction:column;
+    text-align:center;
+    font-size:20px;
+    padding:10px;
+    margin:20px;
 }
 .container-3{
     display:flex;
@@ -960,33 +988,38 @@ a .btn{
     flex-wrap:wrap;
     justify-content:space-around;
     border:1px solid #ccc;
-    margin:100px;
+    margin:40px;
+    padding:20px;
     background:#4682B4;
     color:#fff;
 }
 .box-5{
     flex:1;
-    order:1;
+    padding:5px;
+    margin:30px 30px 30px 50px;
+    
 }
 .box-5 iframe{
-    flex-wrap:wrap;
-    width:100%;
-    height:400px;
-    flex-basis:20%;
-    background-image:url("video4.png");
-    background-size:100% 100%;
-    background-repeat:no-repeat;
+    width:300px;
+    height:220px;
+    
 }
 .box-6{
     flex:1;
-    order:2;
+   
 }
 .box-6 p{
-    padding:50px;
+    flex-direction:column;
+    font-size:15px;
+    margin:5px;
+    padding:5px;
 }
 .box-6 h3{
-   text-align:center;
-   margin-top:50px;
+    flex-direction:column;
+    text-align:center;
+    font-size:20px;
+    padding:10px;
+    margin:20px;
 }
 .container-4{
     display:flex;
@@ -994,33 +1027,37 @@ a .btn{
     flex-wrap:wrap;
     justify-content:space-around;
     border:1px solid #ccc;
-    margin:100px;
+    margin:40px;
+    padding:20px;
     background:#90708C;
     color:#fff;
+    
 }
 .box-7{
     flex:1;
-    order:2;
+    padding:5px;
+    margin:30px 30px 30px 50px;
+    
 }
 .box-7 iframe{
-    flex-wrap:wrap;
-    width:100%;
-    height:400px;
-    flex-basis:20%;
-    background-image:url("video3.png");
-    background-size:100% 100%;
-    background-repeat:no-repeat;
+    width:300px;
+    height:220px;
+    
 }
 .box-8{
     flex:1;
-    order:1;
+    
 }
 .box-8 p{
-    padding:50px;
+    padding:15px;
+    margin:30px;
 }
 .box-8 h3{
-   text-align:center;
-   margin-bottom:30px;
+    flex-direction:column;
+    text-align:center;
+    font-size:20px;
+    padding:10px;
+    margin:20px;
 }
 .container-5{
     display:flex;
@@ -1028,33 +1065,34 @@ a .btn{
     flex-wrap:wrap;
     justify-content:space-around;
     border:1px solid #ccc;
-    margin:100px;
+    margin:40px;
+    padding:20px;
     background:#AA8F66;
     color:#fff;
 }
 .box-9{
     flex:1;
-    order:1;
+    padding:5px;
+    margin:30px 30px 30px 50px;
 }
 .box-9 iframe{
-    flex-wrap:wrap;
-    width:100%;
-    height:400px;
-    flex-basis:20%;
-    background-image:url("video5.png");
-    background-size:100% 100%;
-    background-repeat:no-repeat;
+    width:300px;
+    height:220px;
+    
 }
 .box-10{
     flex:1;
-    order:2;
 }
 .box-10 p{
-    padding:50px;
+    padding:15px;
+    margin:30px;
 }
 .box-10 h3{
-   text-align:center;
-   margin-top:50px;
+    flex-direction:column;
+    text-align:center;
+    font-size:20px;
+    padding:10px;
+    margin:20px;
 }
 .container-6{
     display:flex;
@@ -1062,70 +1100,303 @@ a .btn{
     flex-wrap:wrap;
     justify-content:space-around;
     border:1px solid #ccc;
+
 }
 .video-1{
     display:flex;
-}
-.video-1 iframe{
-    background-image:url("ins1.png");
-    background-size:300px 200px;
-    background-repeat:no-repeat;
-    flex-basis:100%;
+    width:300px;
     height:200px;
-    margin:60px;
+    margin:60px 60px 60px 30px;
 }
+
 .video-2{
     display:flex;
-}
-.video-2 iframe{
-    background-image:url("ins2.png");
-    background-size:300px 200px;
-    background-repeat:no-repeat;
-    flex-basis:100%;
+    width:300px;
     height:200px;
-    margin:60px;
+    margin:60px 60px 60px 30px;
 }
-.video-3{
+
+.video-3 {
     display:flex;
-}
-.video-3 iframe{
-    background-image:url("ins3.png");
-    background-size:300px 200px;
-    background-repeat:no-repeat;
-    flex-basis:100%;
+    width:300px;
     height:200px;
-    margin:60px;
+    margin:60px 60px 60px 30px;
 }
-.video-4{
+
+.video-4 {
     display:flex;
-}
-.video-4 iframe{
-    background-image:url("ins4.png");
-    background-size:300px 200px;
-    background-repeat:no-repeat;
-    flex-basis:100%;
+    width:300px;
     height:200px;
-    margin:60px;
+    margin:60px 60px 60px 30px;
 }
-.video-5{
+
+.video-5 {
     display:flex;
-}
-.video-5 iframe{
-    background-image:url("ins5.png");
-    background-size:300px 200px;
-    background-repeat:no-repeat;
-    flex-basis:100%;
+    width:300px;
     height:200px;
-    margin:60px;
+    margin:60px 60px 60px 30px;
 }
-.video-6{
+
+.video-6 {
     display:flex;
-}
-.video-6 iframe{
-    background-image:url("ins6.png");
-    background-size:300px 200px;
-    background-repeat:no-repeat;
-    flex-basis:100%;
+    width:300px;
     height:200px;
-    margin:60px;
+    margin:60px 60px 60px 30px;
+}
+
+/*-- Videos Page @media(max-width:414px)--*/
+@media(max-width:414px){
+    .resource{
+        width:150px;
+        height:100px;
+        padding:15px;
+        margin:50px 0px 50px 20px;
+        
+    }
+
+    .container-1{
+        display:flex;
+        flex-direction:column;
+        flex-wrap:wrap;
+        justify-content:space-around;
+        border:1px solid #ccc;
+        margin:5px;
+        padding:5px;
+        background:#90708C;
+        color:#fff;
+    }
+    .box-1{
+        flex:1;
+        padding:2px;
+        margin:25px;
+    }
+    .box-1 iframe{
+        width:100%;
+        height:auto;
+    }
+    .box-2{
+        flex:1;
+        padding:0px;
+    }
+    .box-2 p{
+        flex-direction:column;
+        font-size:15px;
+        margin:5px;
+        padding:5px;
+    }
+    .box-2 h3{
+        flex-direction:column;
+        font-size:18px;
+        padding:15px;
+        margin:25px;
+    }
+    .container-2{
+        display:flex;
+        flex-direction:column;
+        flex-wrap:wrap;
+        justify-content:space-around;
+        border:1px solid #ccc;
+        margin:5px;
+        padding:5px;
+        background:#AA8F66;
+        color:#fff;
+    }
+    .box-3{
+        flex:1;
+        padding:2px;
+        margin:30px;
+    }
+    .box-3 iframe{
+        width:100%;
+        height:auto;
+    }
+    .box-4{
+        flex:1;
+        padding:2px;
+    }
+    .box-4 p{
+        flex-direction:column;
+        font-size:15px;
+        margin:5px;
+        padding:5px;
+        
+    }
+    .box-4 h3{
+        flex-direction:column;
+        font-size:18px;
+        padding:5px;
+        margin:5px;
+    }
+    .container-3{
+        display:flex;
+        flex-direction:column;
+        flex-wrap:wrap;
+        justify-content:space-around;
+        border:1px solid #ccc;
+        margin:5px;
+        padding:5px;
+        background:#4682B4;
+        color:#fff;
+    }
+    .box-5{
+        flex:1;
+        padding:2px;
+        margin: 30px;
+       
+    }
+    .box-5 iframe{
+        width:100%;
+        height:150px;
+    }
+    .box-6{
+        flex:1;
+        padding:2px;
+    }
+    .box-6 p{
+        flex-direction:column;
+        font-size:15px;
+        margin:5px;
+        padding:5px;
+    }
+    .box-6 h3{
+        flex-direction:column;
+        font-size:18px;
+        padding:5px;
+        margin:5px;
+    }
+    .container-4{
+        display:flex;
+        flex-direction:column;
+        flex-wrap:wrap;
+        justify-content:space-around;
+        border:1px solid #ccc;
+        margin:5px;
+        padding:5px;
+        background:#90708C;
+        color:#fff;
+    }
+    .box-7{
+        flex:1;
+        padding:2px;
+        margin:30px;
+    }
+    .box-7 iframe{
+        width:100%;
+        height:150px;
+    }
+    .box-8{
+        flex:1;
+        padding:2px;
+    }
+    .box-8 p{
+        flex-direction:column;
+        font-size:15px;
+        margin:5px;
+        padding:10px;
+    }
+    .box-8 h3{
+        flex-direction:column;
+        font-size:18px;
+        padding:5px;
+        margin:5px;
+    }
+    .container-5{
+        display:flex;
+        flex-direction:column;
+        flex-wrap:wrap;
+        justify-content:space-around;
+        border:1px solid #ccc;
+        margin:5px;
+        padding:5px;
+        background:#AA8F66;
+        color:#fff;
+    }
+    .box-9{
+        flex:1;
+        padding:2px;
+        margin:30px;
+    }
+    .box-9 iframe{
+        width:100%;
+        height:150px;
+    }
+    .box-10{
+        flex:1;
+        padding:2px;
+    }
+    .box-10 p{
+        flex-direction:column;
+        font-size:15px;
+        margin:5px;
+        padding:5px;
+    }
+    .box-10 h3{
+        flex-direction:column;
+        font-size:18px;
+        padding:5px;
+        margin:5px;
+    }
+    .container-6{
+        display:flex;
+        flex-direction:column;
+        flex-wrap:wrap;
+        justify-content:space-around;
+        border:none;
+    }
+    .video-1{
+        display:flex;
+        flex-wrap:wrap;
+        
+    }
+    .video-1{
+        max-width:80%;
+        height:100%;
+        padding:5px;
+        margin:20px;
+    }
+    .video-2{
+        display:flex;
+    }
+    .video-2 {
+        max-width:80%;
+        height:100%;
+        padding:5px;
+        margin:20px;
+    }
+    .video-3{
+        display:flex;
+    }
+    .video-3{
+        max-width:80%;
+        height:100%;
+        padding:5px;
+        margin:20px;
+    }
+    .video-4{
+        display:flex;
+    }
+    .video-4{
+        max-width:80%;
+        height:100%;
+        padding:5px;
+        margin:20px;
+    }
+    .video-5{
+        display:flex;
+    }
+    .video-5{
+        max-width:80%;
+        height:100%;
+        padding:5px;
+        margin:20px;
+    }
+    .video-6{
+        display:flex;
+    }
+    .video-6{
+        max-width:80%;
+        height:100%;
+        padding:5px;
+        margin:20px;
+    }
 }
