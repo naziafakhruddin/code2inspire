@@ -1732,6 +1732,170 @@ a .btn{
         margin:20px;
     }
 }
+
+/*----------Books Page---------------*/
+.resource{
+    width:100%;
+    height:300px;
+    float:center;
+    padding:20px;
+    margin:50px 0px 80px 0px;
+}
+.heading{
+    margin-top:20px;
+    padding:10px;
+    width:100%;
+    color:white;
+    background:teal;
+}
+.container-books1{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    margin:0px;
+    padding:20px 0px 0px 10px;
+    width:100%;
+    box-shadow:2px 4px 6px #ddd;
+}
+
+.book-front{
+    width:180px;
+    height:260px;
+    box-shadow:18px 8px 26px 12px #ddd;
+}
+.book-back{
+    width:180px;
+    height:265px;
+    box-shadow:18px 8px 16px  #ddd;
+}
+.holder1 ,.holder2 ,.holder3{
+    display:flex;
+    flex-direction:row;
+   
+}
+.holder2{
+    display:flex;
+    flex-direction:column;
+    margin:20px;
+    padding:20px;
+    
+}
+.holder3{
+    display:flex;
+    flex-direction:column;
+    margin:10px;
+    padding:20px;
+    width:300px;
+}
+pre small{
+    color:black;
+    font-size:15px;
+    margin:10px
+    
+}
+.info{
+    background:transparent;
+}
+.bok-intro{
+    flex-direction:column;
+    margin:5px;
+    padding:5px;
+    font-size:20px;
+}
+/*---Books media(max-width:414px)----*/
+@media(max-width:414px){
+    .resource{
+        display:flex;
+        flex-wrap:wrap;
+        align-self:center;
+        width:100%;
+        height:200px;
+        padding:20px;
+        margin:50px 0px 80px 0px;
+    }
+    .heading{
+        margin-top:20px;
+        padding:10px;
+        width:100%;
+        color:white;
+        background:teal;
+    }
+    .container-books1{
+        display:flex;
+        flex-direction:column;
+        flex-wrap:wrap;
+        margin:0px;
+        padding:10px 0px 0px 10px;
+        width:100%;
+        height:auto;
+        box-shadow:2px 4px 6px #ddd;
+    }
+    .book-front{
+        flex-direction:column;
+        align-self:center;
+        width:85px;
+        height:160px;
+        box-shadow:18px 8px 16px  #ddd;
+    }
+    .book-back{
+        flex-direction:column;
+        align-self:center;
+        width:85px;
+        height:165px;
+        box-shadow:18px 8px 16px  #ddd;
+    }
+
+    .holder1{
+        display:flex;
+        flex-direction:row;
+        align-self:center;
+    
+    }
+    .holder2 ,.holder3{
+        display:flex;
+        flex-direction:column;
+        margin:20px;
+    }
+    .holder2{
+        display:flex;
+        flex-direction:column;
+        margin:20px 5px 5px 5px;
+        padding:5px;
+        
+    }
+    .holder3{
+        display:flex;
+        flex-wrap:wrap;
+        flex-direction:column;
+        margin:10px 5px 10px 0px;
+        padding:5px;
+        width:100%;
+        height:auto;
+    }
+    .holder3 p{
+        margin:10px 10px 10px 0px;
+        padding:10px;
+    }
+    pre small{
+        flex-direction:column;
+        flex-wrap:wrap;
+        color:black;
+        font-size:12px;
+        margin:5px;   
+    }
+    .info{
+        background:transparent;
+    }
+    .book-intro{
+        flex-direction:column;
+        flex-wrap:wrap;
+        padding:20px 10px 20px 0px;
+        font-size:10px;
+       
+    }
+}
+
+
 /*--Get In Touch Section------------------------*/
 main-intouch{
     overflow-x:hidden;
@@ -1943,7 +2107,7 @@ main-intouch{
         width:100%;
         height:500px;
         font-size:15px;
-        color:yellow;
+        color:#fff;
         font-weight:bold;
         background-image:url("contact.svg");
         background-size:200px;
@@ -2019,166 +2183,5 @@ main-intouch{
         padding:10px;
         width:100%;
         background:teal;
-    }
-}
-/*----------Books Page---------------*/
-.resource{
-    width:100%;
-    height:300px;
-    float:center;
-    padding:20px;
-    margin:50px 0px 80px 0px;
-}
-.heading{
-    margin-top:20px;
-    padding:10px;
-    width:100%;
-    color:white;
-    background:teal;
-}
-.container-books1{
-    display:flex;
-    flex-direction:row;
-    flex-wrap:wrap;
-    margin:0px;
-    padding:20px 0px 0px 10px;
-    width:100%;
-    box-shadow:2px 4px 6px #ddd;
-}
-
-.book-front{
-    width:180px;
-    height:260px;
-    box-shadow:18px 8px 26px 12px #ddd;
-}
-.book-back{
-    width:180px;
-    height:265px;
-    box-shadow:18px 8px 16px  #ddd;
-}
-.holder1 ,.holder2 ,.holder3{
-    display:flex;
-    flex-direction:row;
-   
-}
-.holder2{
-    display:flex;
-    flex-direction:column;
-    margin:20px;
-    padding:20px;
-    
-}
-.holder3{
-    display:flex;
-    flex-direction:column;
-    margin:10px;
-    padding:20px;
-    width:300px;
-}
-pre small{
-    color:black;
-    font-size:15px;
-    margin:10px
-    
-}
-.info{
-    background:transparent;
-}
-.bok-intro{
-    flex-direction:column;
-    margin:5px;
-    padding:5px;
-    font-size:20px;
-}
-/*---Books media(max-width:414px)----*/
-@media(max-width:414px){
-    .resource{
-        display:flex;
-        flex-wrap:wrap;
-        align-self:center;
-        width:100%;
-        height:200px;
-        padding:20px;
-        margin:50px 0px 80px 0px;
-    }
-    .heading{
-        margin-top:20px;
-        padding:10px;
-        width:100%;
-        color:white;
-        background:teal;
-    }
-    .container-books1{
-        display:flex;
-        flex-direction:column;
-        flex-wrap:wrap;
-        margin:0px;
-        padding:10px 0px 0px 10px;
-        width:100%;
-        height:auto;
-        box-shadow:2px 4px 6px #ddd;
-    }
-    .book-front{
-        flex-direction:column;
-        align-self:center;
-        width:85px;
-        height:160px;
-        box-shadow:18px 8px 16px  #ddd;
-    }
-    .book-back{
-        flex-direction:column;
-        align-self:center;
-        width:85px;
-        height:165px;
-        box-shadow:18px 8px 16px  #ddd;
-    }
-
-    .holder1{
-        display:flex;
-        flex-direction:row;
-        align-self:center;
-    
-    }
-    .holder2 ,.holder3{
-        display:flex;
-        flex-direction:column;
-        margin:20px;
-    }
-    .holder2{
-        display:flex;
-        flex-direction:column;
-        margin:20px 5px 5px 5px;
-        padding:5px;
-        
-    }
-    .holder3{
-        display:flex;
-        flex-wrap:wrap;
-        flex-direction:column;
-        margin:10px 5px 10px 0px;
-        padding:5px;
-        width:100%;
-        height:auto;
-    }
-    .holder3 p{
-        margin:10px 10px 10px 0px;
-        padding:10px;
-    }
-    pre small{
-        flex-direction:column;
-        flex-wrap:wrap;
-        color:black;
-        font-size:12px;
-        margin:5px;   
-    }
-    .info{
-        background:transparent;
-    }
-    .book-intro{
-        flex-direction:column;
-        flex-wrap:wrap;
-        padding:20px 10px 20px 0px;
-        font-size:10px;
-       
     }
 }
