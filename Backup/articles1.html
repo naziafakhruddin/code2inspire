@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
     <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.2.0/p5.js"></script>
 
 </head>
 <body>
@@ -49,7 +50,190 @@
    </div>
 </div>
 </header> 
+<h1 class="headings">ARTICLES</h1>  
+ <div class="container-3d">
+    <article class="content1">
+         <h3 class="cover">COVER FEATURE</h3>
+         <div id="3D">
+            <!--Javscript library p5.js  is used to inside this div. The div is specified as the parent of the canvas
+                 on which an interactive 3D shape with 2D texturing is appearing . -->
+         </div>
+         <h1>
+             Creating 2D texture on a 3D shape in p5.js.
+         </h1>
+         <div class="meta">
+             <small>
+                 <img class="author" src="author4.png">
+                    Written By Jane Doe 
+                 <time datetime="2021-01-31"> January 31<sup>th</sup> , 2021</time>
+             </small>
+         </div>
+         <p class="main">
+                 It’s a very mesmerising way to give
+                 a dynamic 2D texture to the 3D object .
+                 It can be simple sketch to a very
+                 sophisticated design pattern using simple programming in p5.js.
+                 Let’s get started .Create a new project using p5.js Web Editor.
+                 A new project in the p5js Web Editor has following two functions.
+                 The setup() function runs only once and draw() function runs in a loop.
+                 For making a radial pattern , make two variables one for radial coordinate
+                 r ,give it a value of 10 and other for polar angle a,give it value of 0.
+                 Now, increment the value of variable a in the function draw().
+                 In graphics, to calculate the Polar coordinates(r , a) ,
+                 it needs to be converted to Cartesian coordinates (x , y).
+                 And for that we will use trigonometry.To fix this,translate()function is used ,to translate it (200,200). Now the circle , starts to appear in the centre of the canvas and its rotating .But, they are not forming the radial pattern because the background is continuously gets drawn and clearing the
+                 circles.
+            </p>
 
+            <figure>
+                <img class="code1" src="code-radial.png" alt="radial pattern">
+                 <figcaption>
+                    <em> Code snippet.</em> 
+                </figcaption>
+             </figure>
+             <p class="main">
+                 To make the pattern appear, lets move the background from function draw() to setup().Now ,the pattern start
+                 to appear,but they are close together. To make some space between them ,let’s make a variable c and give the spacing of 20.
+                 Now, increment the spacing variable c in draw() and add the variable c to trigonometric formula :<b> x=r+c*cos(a) and y=r+c*sin(a) </b>.
+             </p>
+             <audio controls class="main-audio">
+                <source src="audiofiles/article1.mp3" type="audio/mpeg">
+            </audio>
+      </article>
+     
+      <article class="content2">
+         <h3 class="para2">3D Shapes <i class="far fa-lightbulb light"></i></h3>
+         <p class="para2">
+
+             To fill the colour in the 3D shapes ,the simplest way is to write normalMaterial() function.The colours will automatically appear on the 3D object.But these shapes doesn't look like 3D ,to make them look like 3D we need to rotate our shapes.For that ,first make the  global variable of angle and initialise it with zero.Then in the draw function , update the angle . In WEBGL rotate function works as rotateX,rotateY and rotateZ. Try rotating in different axis separately to see how they move.
+             
+            <img class="concept" src="torus.png" alt="3D shape">
+             
+            <audio controls>
+                <source src="audiofiles/3dshapes.mp3" type="audio/mpeg">
+            </audio>
+         </p>
+     </article>
+
+ </div>
+ <div class="container-3d">
+
+     <article class="content1">
+         <img class="image-3d" src="floating.svg" alt="cubes picture">
+         <h1>Making a floating illusion in 3D.</h1>
+         <div class="meta">
+             <small>
+                 <img class="author" src="author.png"> Written By Jake Doe <time datetime="2021-01-31"> January 31<sup>th</sup> , 2021</time>
+             </small>
+         </div>
+         <p class="main">
+            In p5.js, function setup() runs once , where as function draw() runs continously in a loop.Like a painter’s canvas , we will be seeing our code’s result on the browser’s canvas.In function setup the canvas is created by createCanvas() function. We can change the width and height of our canvas by changing the parameter values of createCanvas() function.To access the 3D library you need to add a third parameter WEBGL to createCanvas() function.First let’s make a ball, to do this you have write the code in function draw(),because we need to rotate our ball and this requires the function draw()to run continuously.The ball is created by function sphere() which has a paramter for the radius of 900.This bigger sphere will be in the background.Now, make another sphere of the size 80.Now, we want to add a texture to this sphere , but how will we do it? .First find a texture with a white background and horizontal lines and upload it to p5.js, now we need to load it so that we can add it to the texture.
+         </p>
+         <figure>
+           <img class="code2" src="code2.png" alt="code snippet" >
+             <figcaption>
+                <em> Code snippet.</em>  
+            </figcaption>
+         </figure>
+         <p class="main">
+                 Now we have to rotate the big sphere , but it won’t work unless we can stop one part of the code
+                 from affecting the other,here is the code to how both of these are done.
+                 Because it is rotating continously, we don’t get the affect of it moving .
+                 The solution to this problem is making it move up and down like pulsating movement using sin .
+         </p>
+         <figure>
+           <img class="code" src="float.png" alt="floating ball illusion">
+         </figure>
+         <audio controls class="main-audio">
+            <source src="audiofiles/floating.mp3" type="audio/mpeg">
+        </audio>
+     </article>
+      
+    <article class="content2">
+        <h3 class="para1">Rotation Concept <i class="far fa-lightbulb light"></i></h3>
+        <p class="para2">
+             Rotation in 2D is very simple as it just requires the rotate() function.
+             As we know that the origin of square or rectangle are on the top left hand corner ,so for
+             rotating a square from the middle p5.js have the function of rectMode(CENTER),
+             which when used in the setup the rectangle and translate it , will start rotating
+             from the middle.Rotation in 3D is different ,as the rotate function work along the specific axis.
+             In the x-axis is rotateX ,in y-axis is rotateY and in the z-axis is rotateZ.
+             Radians are angle measurements based on the value of "PI" and is used to rotate objects.
+             Four radian values are frequently used.
+             TWO_PI = 360 degrees,
+             PI = 180 degrees ,
+             HALF_PI = 90 degrees
+             and QUARTER_PI = 45 degrees<br>
+            <img class="concept" src="rotate.png" alt="rotation visualisation">
+            <audio controls>
+                <source src="audiofiles/rotation.mp3" type="audio/mpeg">
+            </audio>
+         </p>
+
+     </article>
+
+ </div>
+<div class="container-3d">
+      <article class="content1">
+          <img class="image-planet" src="planet.svg" alt="cubes picture">
+          <h1>Planetary motion in 3D.</h1>
+          <div class="meta">
+             <small>
+                 <img class="author" src="author3.png"> Written By John Doe <time datetime="2021-01-31"> January 31<sup>th</sup> , 2021</time>
+             </small>
+          </div>
+          <p class="main">
+             The two functions in the template both do different things.The function setup() only
+             runs once while function draw() does the opposite and runs continously .
+             The createCanvas() line in setup creates the canvas and you can change these values inside of the round
+             brackets to make the canvas bigger or smaller in width or height .The background function in draw()
+             creates the background and the parameter is the brightness of the background .In createCanvas() we add
+             a third parameter of WEBGL, this activiates the 3D engine .Now we add a new variable called angle.
+             This variable will help with rotation later on.Here we create a sphere, you can change the parameter
+             for it to make it bigger or smaller .Now we have created a sphere,but it is just static , to fix this
+             we write rotateZ() and give the parameter of angle which was the variable which we made before .
+             You can change the value of angle in draw to make it rotate slower or faster .
+          </p>
+          <figure>
+            <img class="code3" src="code3.png" alt="code snippet" >
+            <figcaption>
+                <em> Code snippet.</em>  
+            </figcaption>
+         </figure>
+         <p class="main">
+                 We have put translate() to make it move away from the center.Right now we are only using one co-ordinate,
+                 which is x , but you can use other co-ordinates which are y and z by changing their values.
+                 I have also decreased the angle in draw so that it is slower and easier to see.Inside the second push
+                 and pop we write translate() with the values 100,0,0 but, you can change the values however you want.
+                 Now all we have to do is make a sphere after translate with the parameter of 25.
+         </p>
+         <figure>
+           <img class="code" src="motion.png" alt="planetary motion">
+         </figure>
+         <audio controls class="main-audio">
+            <source src="audiofiles/planets.mp3" type="audio/mpeg">
+        </audio>
+
+     </article>
+     <article class="content2">
+         <h3 class="para1">Translation Concept <i class="far fa-lightbulb light"></i></h3>
+         <p class="para2">
+
+             This function changes the original x-axis and y-axis positions to a new position.
+             For example , the origin is x=20 and y=20 ,now translate it to a new origin x=250 and y=250.translate(x-axis , y-axis).
+             You can translate an object in 2D as well as in the 3D .In 3D ,since the origin is in the middle ,so when translate up or
+             left the values becomes negative .But as we move down or right the value
+             remain positive .We need to put our code inside the push() and pop().
+             So one translate does not effect the other translate function.
+            <img class="concept" src="translate.png" alt="translation visualisation">
+            <audio controls>
+                <source src="audiofiles/translate.mp3" type="audio/mpeg">
+            </audio>
+         </p>
+     </article>
+
+
+ </div>
 
 
 
