@@ -18,9 +18,10 @@ body{
 
 .btn{
     padding:10px;
-    color:teal;
-    border:2px solid #4682B4;
+    color:#fff;
+    border:2px solid #fff;
     margin-top:50px;
+    text-decoration:none;
 }
 h1{
     margin:0px;
@@ -1094,16 +1095,16 @@ a .btn{
         border:2px solid #90708C;
     
     }
-    .main{
+    .main {
         padding:20px;
         margin-right:5px;
-        font-size:15px;
+        font-size:12px;
     }
     .author{
-        width:60px;
-        height:65px;
-        padding:10px;
-        margin:5px 5px 0px 0px;
+        width:40px;
+        height:45px;
+        padding:4px;
+        margin:2px 2px 0px 0px;
         background:#90708C;
     }
     .light{
@@ -1115,10 +1116,9 @@ a .btn{
         color:gold;
     }
     small{
-        padding:10px;
+        padding:5px;
         background:#4682B4;
         color:#fff;
-    
     }
     .main-audio{
         outline:none;
@@ -1140,18 +1140,13 @@ a .btn{
     article {
         justify-content:space-around;
     }
-    .image-cube {
-        width:300px;
-        height:300px;
-        margin-bottom:30px;
-    }
     
     .image-planet {
-        width:300px;
+        width:100%;
         height:300px;  
     }
     .image-3d {
-        width:300px;
+        width:100%;
         height:300px;  
     }
     .image-3d:hover {
@@ -1210,13 +1205,20 @@ a .btn{
         margin:50px 10px 50px 0px;
         padding:5px;
     }
-    .para{
-        margin-right:50px;
-        padding:25px;
+    .para1 {
+        margin:5px 5px 2px 2px;
+        padding:0px;
         background:#AA8F66;
         color:white;
         font-size:15px;
     }
+    .para2 {
+      margin:0px 5px 5px 2px;
+      padding:25px;
+      background:#AA8F66;
+      color:white;
+      font-size:12px;
+  }
     .content2  h3{
         padding:20px;
     
@@ -1248,11 +1250,13 @@ a .btn{
 .box-1{
     flex:1;
     padding:5px;
-    margin:30px 30px 30px 50px;
+    margin:70px 30px 30px 50px;
 }
-.box-1 iframe{
+.box-1 img{
     width:300px;
-    height:220px;
+    height:200px;
+    border:5px solid #eee;
+    border-radius:10%;
 }
 .box-2{
     flex:1;
@@ -1286,13 +1290,15 @@ a .btn{
 .box-3{
     flex:1;
     padding:5px;
-    margin:30px 30px 30px 50px;
+    margin:60px 30px 30px 50px;
 }
-.box-3 iframe{
+.box-3 img{
     width:300px;
-    height:220px;
-    
+    height:200px;
+    border:5px solid #eee;
+    border-radius:10%;
 }
+
 .box-4{
     flex:1;
     order:1;
@@ -1326,13 +1332,14 @@ a .btn{
 .box-5{
     flex:1;
     padding:5px;
-    margin:30px 30px 30px 50px;
-    
+    margin:50px 30px 30px 50px;
+     
 }
-.box-5 iframe{
+.box-5 img{
     width:300px;
-    height:220px;
-    
+    height:200px;
+    border:5px solid #eee;
+    border-radius:10%;
 }
 .box-6{
     flex:1;
@@ -1366,13 +1373,13 @@ a .btn{
 .box-7{
     flex:1;
     padding:5px;
-    margin:30px 30px 30px 50px;
-    
+    margin:80px 30px 30px 50px;  
 }
-.box-7 iframe{
+.box-7 img{
     width:300px;
-    height:220px;
-    
+    height:200px;
+    border:5px solid #eee;
+    border-radius:10%;
 }
 .box-8{
     flex:1;
@@ -1403,12 +1410,14 @@ a .btn{
 .box-9{
     flex:1;
     padding:5px;
-    margin:30px 30px 30px 50px;
+    margin:50px 30px 30px 50px;
+   
 }
-.box-9 iframe{
+.box-9 img{
     width:300px;
-    height:220px;
-    
+    height:200px;
+    border:5px solid #eee;
+    border-radius:10%;
 }
 .box-10{
     flex:1;
@@ -1432,11 +1441,16 @@ a .btn{
     border:1px solid #ccc;
 
 }
+video::-webkit-media-controls-panel {
+    background-image: linear-gradient(4.4rad,transparent,transparent,#333)!important;
+    
+  }
 .video-1{
     display:flex;
     width:300px;
     height:200px;
     margin:60px 60px 60px 30px;
+      
 }
 
 .video-2{
@@ -1502,7 +1516,7 @@ a .btn{
         padding:2px;
         margin:25px;
     }
-    .box-1 iframe{
+    .box-1 img{
         width:100%;
         height:auto;
     }
@@ -1538,7 +1552,7 @@ a .btn{
         padding:2px;
         margin:30px;
     }
-    .box-3 iframe{
+    .box-3 img{
         width:100%;
         height:auto;
     }
@@ -1576,7 +1590,7 @@ a .btn{
         margin: 30px;
        
     }
-    .box-5 iframe{
+    .box-5 img{
         width:100%;
         height:150px;
     }
@@ -1612,7 +1626,7 @@ a .btn{
         padding:2px;
         margin:30px;
     }
-    .box-7 iframe{
+    .box-7 img{
         width:100%;
         height:150px;
     }
@@ -1648,7 +1662,7 @@ a .btn{
         padding:2px;
         margin:30px;
     }
-    .box-9 iframe{
+    .box-9 img{
         width:100%;
         height:150px;
     }
@@ -1675,6 +1689,10 @@ a .btn{
         justify-content:space-around;
         border:none;
     }
+    video::-webkit-media-controls-panel {
+        background-image: linear-gradient(4.1rad,transparent,#d3dde6,transparent,transparent,transparent,transparent,#eee) !important;
+        background-size:300px 300px !important;
+      }
     .video-1{
         display:flex;
         flex-wrap:wrap;
