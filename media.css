@@ -739,6 +739,7 @@
         justify-content:space-around;
         border:none;
     }
+    /*-video tag -*/
     video::-webkit-media-controls-panel {
         background-image:linear-gradient(4.2rad,transparent,transparent) !important;
       }

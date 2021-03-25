@@ -709,7 +709,7 @@ a .btn{
      height:300px;  
   }
   .image-3d:hover {
-      animation:balloons 2s linear;
+      animation:balloons 2s linear; /* animation */
   }
   @keyframes balloons{
       0%{
@@ -731,6 +731,10 @@ a .btn{
   .content1 p{
       margin:10px;
       line-height:30px;
+  }
+  .content1 p::first-letter{  /* pseudo-element for making the first letter larger */
+      color:#333;
+      font-size:30px;
   }
   .code{
       width:300px;
