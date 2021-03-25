@@ -1,0 +1,186 @@
+<html>
+<head>
+    <title>Coding Magazine</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Magazine">
+    <meta name="author" content="Programming tutorials"> 
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="refresh" content="600">
+    <meta name="keywords" content="Free coding tutorials,free programming tutorials for all ages">
+    <meta name="robots" content="onindex,nofollow">
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <script src="script.js"></script>
+    
+</head>
+<body>
+<!-- For accessibity header,nav,main ,section ,footer tag and alt is used in img tag.iframe tag for the video h1,h2,h3,ul,li,a and p tags are used.Jvascript script is used in the more articles section to enlarge the images --> 
+<header>
+<!--Navigation-->
+<nav id="main-nav">
+    <ul>
+        <li><a class="currentpg" href="index.html">HOME</a></li>
+        <li><a href="articles.html">ARTICLES</a></li>
+        <li><a href="videos.html">VIDEOS</a></li>
+        <li><a href="books.html">BOOKS</a></li>
+        <li><a href="contact.html">GET IN TOUCH</a></li>
+    </ul>
+</nav>
+<!--Navigation at media (max-width:414px)-->
+<nav id="small-nav">
+    <ul>
+        <li><a class="currentpg" href="index.html"><i class="fas fa-home"></i></a></li>
+        <li><a href="articles.html"><i class="far fa-newspaper"></i></a></li>
+        <li><a href="videos.html"><i class="fas fa-video"></i></a></li>
+        <li><a href="books.html"><i class="fas fa-book"></i></a></li>
+        <li><a href="contact.html"><i class="fas fa-envelope-open-text"></i></a></li>
+    </ul>    
+</nav>
+
+<!--Logo code-->
+<div class="logo">
+    <h1 class="first"> 
+        CODE 
+        <span class="mid">T<i class="fas fa-mouse"></i><span>
+        <span class="second">INSPIRE<span>
+    <h1>
+   <div>        
+    <p>ISSUE 1 / 2021</p>
+   </div>
+</div>
+</header> 
+<!--Section0 Banner-->         
+<section id="section0">
+    <!--Animated balloons on the banner-->
+     <div class="animation">
+         <img class="float1" src="images/balloon.svg" alt="floating balloon">
+     </div>
+    <!--Animated words on the banner-->
+    <div class="banner">
+         <h2><span class="words"><em></em></span> WITH CODE</h2>
+    </div>  
+</section>
+
+<!--Section1 Editors Pick-->
+<main id="section1">
+    <h1 class="main-heading">
+        EDITOR'S PICK
+    </h1>
+    <div class="main-article">
+        <div class="main-image">
+           <img src="images/3dcube.png"alt="3d box">
+        </div>
+        <div class="main-para">
+            <h2>
+                Creating 2D texture on a 3D shape in p5.js
+            </h2>
+            <p>
+                Creating a dynamic 2D texture to the 3D object . It can be simple sketch
+                to a very sophisticated design pattern using simple programming in p5.js.
+                <br><br>
+                <a class="btn" href="articles.html">
+                    READ MORE
+                </a>
+            </p>   
+        </div>
+    </div>
+</main>
+<!--Section2 Video Tutorials-->
+<section id="section2">
+    <h1 class="heading"> VIDEO TUTORIALS </h1>
+    <div class="article2">
+        <div class="para-two">
+            <h3>
+                Forest with simple shapes tutorial in Blender 2.8
+            </h3>
+            <p>
+                In this video , I am using basic shapes to to create a forest in Blender 2.8.
+                <br><br>
+                <a class="btn" href="videos.html">
+                   WATCH NOW
+                </a>
+            </p>
+        </div>
+
+        <div class="image-two">
+            <iframe class="vt" src="https://www.youtube-nocookie.com/embed/VfFLrv2KirI" allow="accelerometer; autoplay;" allowfullscreen>
+            </iframe>  
+        </div>
+        
+    </div>
+</section> 
+<!--Section3 Book of the Week-->
+<section id="section3">
+    <h1 class="heading"> BOOK OF THE WEEK</h1>
+    <div class="article2">
+        <div class="image-three">
+             <a target="blank" href="https://www.amazon.co.uk/Superfun-P5-js-Projects-Nazia-Fakhruddin/dp/1697457622/ref=pd_ybh_a_4?_encoding=UTF8&psc=1&refRID=84W7ZNY36CF5WV7863MB">        
+                 <img src="images/book1.png"alt="coding book">
+             </a>
+        </div>
+        <div class="para-three">
+            <h3>Superfun P5.js Projects</h3>
+            <p>
+                 This book is our attempt  to create lesson plan for beginners, who wants to learn to code in a  fun way. It teaches creative coding in a fun way  It is available as an e-book on Amazon Kindle  and as paperback edition from Amazon.
+                 <br><br>
+                 <a target="blank" class="btn" href="https://www.amazon.co.uk/Superfun-P5-js-Projects-Nazia-Fakhruddin/dp/1697457622/ref=pd_ybh_a_4?_encoding=UTF8&psc=1&refRID=84W7ZNY36CF5WV7863MB">
+                    BUY NOW
+                 </a>
+            </p>
+            
+        </div>
+    </div>
+</section> 
+<!--Section4 More Articles containing archive and new interesting programming articles --> 
+<h1 class="archives"> MORE ARTICLES</h1>
+<section id="section4" >
+    <div class="small1">
+        <a target="blank" href="https://bytesizecoding.com/f/function">
+            <img src="images/function.png"alt="functions explanation" onmouseover="highlight(this)" onmouseleave="normal(this)">
+        </a>
+        <p>
+            <a target="blank" href="https://bytesizecoding.com/f/function">
+                All about Functions.
+            </a>
+        </p>
+    </div>
+    <div class="small2">
+        <a target="blank" href="https://bytesizecoding.com/f/moving-dot-illusion"> 
+            <img src="images/dot.png" alt="function design" onmouseover="highlight(this)" onmouseleave="normal(this)">
+        </a>
+        <p>
+            <a target="blank" href="https://bytesizecoding.com/f/moving-dot-illusion">
+                Moving Dots Illusion with loops
+            </a>
+        </p>
+    </div>
+    <div class="small3">
+        <a target="blank" href="https://medium.com/@naziafakhruddin/singing-swan-tutorial-using-p5-js-bezier-curve-and-sound-b0f3722a8247">
+            <img src="images/bird.png" alt="swan with bezier curve" onmouseover="highlight(this)" onmouseleave="normal(this)">
+        </a>
+        <p>
+            <a target="blank" href="https://medium.com/@naziafakhruddin/singing-swan-tutorial-using-p5-js-bezier-curve-and-sound-b0f3722a8247">
+                Singing Swan with bezier curve
+            </a>
+        </p>
+    </div>
+</section> 
+<!--Footer-->
+<footer>
+    <div class="logo-small"> 
+        <h3 class="first"> 
+            CODE 
+            <span class="mid">T<i class="fas fa-mouse"></i><span>
+            <span class="second">INSPIRE<span>
+        <h3>
+    </div>
+    <div>
+        <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.twitter.com/" ><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+    </div>
+    <p>Copright &copy CODE TO INSPIRE 2021</p>
+</footer>      
+</body>
+</html>
