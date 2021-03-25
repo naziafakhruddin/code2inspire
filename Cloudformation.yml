@@ -31,7 +31,7 @@ Parameters:
   GitHubBranch:
     Description: The branch that will trigger build/deploy.
     Type: String
-    Default: master
+    Default: cleanmaster
 Mappings:
   S3WebsiteMap:
     us-east-1:
