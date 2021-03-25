@@ -91,14 +91,7 @@ a{
     border-radius:15px;
     box-shadow:2px 8px 16px #ddd;
 }
-/*-------------------------------*/
-/*--nav media min-width:417px--*/
-@media(min-width:417px){
-    #small-nav{
-     display:none;
-    } 
- }
- /*-------------------------------*/
+
 /*-------------------------------*/
 
 /*--Logo code--*/
@@ -284,56 +277,7 @@ a{
         transform:translateY(0px);
     }
 }
-
 /*-------------------------------*/
-/*--Section0- Banner media max-width 414px--*/
-@media(max-width:414px){
-    
-    .banner h2{
-        padding:0;
-        margin:10px;
-        font-size:18px;
-        font-family:'Noto Sans', sans-serif;
-        color:#AA8F66;
-    }
-    .words::before{
-        content:'';
-        border-top:5px solid #AA8F66;
-        color:#fff;
-        padding:10px 5px 5px 5px;
-        margin:20px 2px 50px 2px;
-        font-weight:bold;
-        font-size:25px;
-        animation:banner 5s ease-in infinite ;
-    }
-    @keyframes banner{
-        0%{
-            content:'CREATE';
-            font-family: 'Poppins', sans-serif;
-        }
-         50%{
-            content:'DESIGN';
-            font-family: 'Montserrat', sans-serif;
-            border-radius:5%;
-        }
-        100%{
-            content:'ANIMATE';
-            font-family: 'Noto Sans', sans-serif;
-            border-radius:100%;
-        }
-    }
-    .float1{
-        position:relative;
-        top:10%;
-        left:1%;
-        bottom:20%;
-        width:100%;
-        height:400px;
-        animation:balloon 5s linear ;
-    }   
-}
-/*-------------------------------*/
-
 /*--Section1--*/
 #section1{
     background:#eee;
@@ -355,13 +299,13 @@ a{
 }
 .main-image{
     flex:1;
-    margin:20px 20px 20px 80px;
+    margin:20px 20px 20px 50px;
 }
 .main-image img{
     align-content:center;
     margin-bottom:10px;
-    width:300px;
-    height:200px;
+    width:280px;
+    height:180px;
 }
 .main-para{
     flex:1;
@@ -395,63 +339,6 @@ a{
 a .btn{
     margin:50px;
     padding:5px;  
-}
-
-/*-------------------------------*/
-/*--Section1 media max width 414px --*/
-@media(max-width:414px){
-    
-    #section1 .main-article{
-        display:flex;
-        flex-direction:column;
-        flex-wrap:wrap;
-        justify-content:space-between;
-        margin:5px;
-        padding:50px;   
-    }
-    .main-image{
-        flex:1;
-        margin:5px;  
-    }
-    .main-image img{
-        align-content:center;
-        margin-bottom:10px;
-        width:100%;
-        height:150px;
-    }
-    .main-para{
-        flex:1;
-    }
-    .main-para h2 p a{
-        display:flex;
-        flex-direction:column;
-        margin:20px ;
-    }
-    .main-para h2{
-       padding:15px;
-    
-    }
-    .main-para p{
-         font-size:15px;
-         margin:10px 10px 25px 10px;
-         padding:5px;
-    }
-    .main-para a {
-        text-decoration:none;
-        margin:15px ;
-        background: #4682B4;
-        padding:10px;
-        font-size:12px;
-        color:white;
-    }
-    .main-para a:hover{
-        background: #AA8F66;
-        border:2px inset #AA8F66; 
-    }
-    a .btn{
-        margin:50px;
-        padding:5px;  
-    }
 }
 /*-------------------------------*/
 
@@ -521,63 +408,7 @@ a .btn{
     }
 
  /*-------------------------------*/
-/*--Section2 media max-width 414px--*/
-@media(max-width:414px){
-    
-    #section2 .heading{
-        background:#90708C;
-        color:#fff;
-        padding:5px;
-        margin:0px;
-        width:100%;
-        text-align:center;
-    }
-    #section2 .article2{
-        display:flex;
-        flex-direction:column;
-        flex-wrap:wrap;
-        margin:15px;
-        padding:20px;  
-    }
-    .para-two{
-        flex:1;
-        order:1;
-    }
-    .image-two{
-        flex:1;
-        order:1;
-    }
-    .image-two iframe{
-        margin:50px 10px 10px 10px;
-        width:100%;
-        height:200px;
-    }
-    .para-two h3{
-        
-        font-size:20px;
-        padding:0px;
-    }
-    .para-two p{
-        font-size:15px;
-        padding:8px;
-    }
-    .para-two a{
-        font-size:10px;
-        text-decoration:none;
-        margin:10px ;
-        background: #4682B4;
-        padding:8px;
-        color:white;
-    }
-    .para-two a:hover{
-        background: #AA8F66;
-        border:2px inset #AA8F66; 
-    }
-    a .btn{
-        margin:50px ;
-        padding:5px;
-    }
-}
+
 /*-------------------------------*/
 
 /*--Section3 Books--*/
