@@ -1,1 +1,1 @@
-# code2inspire is a Coding Magazine where you can find programming tutorials ,tips and tricks which is required to learn different programming languages like Scratch , Python ,Javascript etc.Sign up for free and learn with to code with us.
+code2inspire is a Coding Magazine where you can find programming tutorials ,tips and tricks which is required to learn different programming languages like Scratch , Python ,Javascript etc.Sign up for free and learn with to code with us.
