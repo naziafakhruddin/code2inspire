@@ -2,7 +2,7 @@
 *{
     box-sizing:border-box;
     margin:auto;
-    padding:auto;
+    padding:0px;
 }
 body{
 
@@ -33,12 +33,16 @@ h1{
     font-family: 'Poppins', sans-serif;
 }
 h2{
-    font-family: 'Noto Sans', sans-serif;
-    font-weight:bold;
+    font-family: 'Poppins', sans-serif;
+    text-transform:uppercase;
+    padding:5px 5px 5px 10px;
+    font-size:30px;
+    line-height:1.5em;
+    font-size:25px;
 }
 h3{
-   font-family: 'Noto Sans', sans-serif;
-    font-weight:bold;
+   font-family: 'Poppins', sans-serif;
+   font-weight:bold;
 }
 .headings{
     background:#0D5C63;
@@ -446,13 +450,22 @@ a .btn{
     flex-wrap:wrap;
     justify-content:center;
     color:#333;
-    margin:50px  
+    margin:50px;  
+}
+.archives{
+    background:#4682B4;
+    color:#fff;
+    padding:5px;
+    margin:0px;
+    width:100%;
+    text-align:center;
 }
 #section4 .small1{
    flex:1;
    order:1;                  /*order is 1 for the first image*/
-   align-content:center;
+   align-self:center;
    flex-wrap:wrap;
+   margin:auto;
 }
 .small1 img{
     width:300px;
@@ -470,10 +483,7 @@ a .btn{
     text-decoration:none;
     color:#333;
 }
-.archives{
-    background:#4682B4;
-    color:white;
-}
+
 #section4 .small2{
    flex:1;
    order:2;              /*order is 2 for the second image*/
@@ -600,6 +610,7 @@ a .btn{
      background:#AA8F66;              /* Cover feature heading code */
      padding:15px;
      color:white;
+     font-size:20px;
      width:200px;
      margin:0px 0px 40px 0px;
      border:2px solid #90708C; 
