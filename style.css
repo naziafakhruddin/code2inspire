@@ -17,11 +17,12 @@ body{
 }
 /*------Reused Code-----------*/
 .btn{
-    padding:10px;
+    padding:5px;
     color:#fff;
     border:2px solid #fff;
     margin-top:50px;
     text-decoration:none;
+    font-size:13px;
 }
 h1{
     margin:0px;
@@ -47,7 +48,7 @@ h3{
     padding:20px;
 }
 p{
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;    
 }
 a{
     font-family: 'Noto Sans', sans-serif;
@@ -57,16 +58,17 @@ a{
 /*-----------Navigation----------------*/
 /*--big screen navigation code--*/
 #main-nav{
-    display:flex;
+    display:flex;       /*-Flex is used in Navigation bar-*/
     flex-wrap:wrap;
     justify-content:center;
     background:transparent;
     padding:5px;
     margin:20px 0px 0px 0px ;
+    
 }
 #main-nav li{
     list-style:none;
-    display:inline;
+    display:inline;        /*-Unorder list is displayed inline-*/
     padding:5px;
     color:#4682B4;
     margin:0px ;
@@ -76,7 +78,7 @@ a{
    text-decoration:none;
    color:#4682B4;
    font-family: 'Poppins', sans-serif;
-   font-size:15px;
+   font-size:14px;
 }
 #main-nav li a:hover{
   color:teal;
@@ -84,7 +86,7 @@ a{
   border-bottom:2px solid teal;
 }
 /*--currentpage in navigation--*/
-.currentpg{
+.currentpg{                             /* display the location in the website */
     margin:0px 5px 10px 2px;
     padding:5px;
     border:2px solid #AA8F66;
@@ -95,26 +97,27 @@ a{
 /*-------------------------------*/
 
 /*--Logo code--*/
-.logo {
+.logo {                         /*-Flex is used in Logo-*/
   display:flex;
   flex-direction:row;
   border-bottom:2px solid #90708C;
 }
 .logo .first{
     flex:1;
-    align-items:start;
+    align-items:flex-start;               /*-Logo is aligned in the start-*/
     font-size:35px;
     font-family: 'Noto Sans', sans-serif;
     font-weight:bold;
     color:#0D5C63;
     margin:50px;
-    animation:logo 1s ease-in ;  /*-Animation-*/
+    animation:logo 1s ease-in ;  /*-Animation ease-in is used in the logo-*/
 }
 .logo .mid{
     flex:1;
     color:#AA8F66;
     font-size:35px;
     margin:0px 0px 0px 2px;
+    animation:logo 1s ease-in ;
 }
 .logo .second{
     flex:1;
@@ -123,16 +126,17 @@ a{
     font-weight:bold;
     color:#4682B4;
     text-transform:UPPERCASE;
+    animation:logo 1s ease-in ;
 }
 .logo p{
     flex:2;
-    align-self:end;
+    align-self:flex-start;
     justify-content:center;
     font-size:22px;
     font-family: 'Poppins', sans-serif;
     margin:10px 20px 20px 0px;
 }
-@keyframes logo{
+@keyframes logo{            /*--@keyframes is used to make the logo gradually become bigger-*/
     0%{
        font-size:0px;
     }
@@ -140,90 +144,39 @@ a{
      font-size:40px;
     }
 }
+/*----------------------------Home Page Sections---------------------------------------*/
 
-/*-------------------------------*/
-/*--logo media 414px--*/
-@media(max-width:414px){
-    .logo {
-      display:flex;
-      flex-direction:column;
-      align-content:start;
-      margin:5px 0px 5px 5px;
-      border-bottom:2px solid #90708C;
-    }
-    .logo .first{
-        flex:1;
-        font-size:20px;
-        font-family: 'Noto Sans', sans-serif;
-        font-weight:bold;
-        color:#0D5C63;
-        margin:10px;
-        animation:logo 1s ease-in ; 
-    }
-    .logo .mid {
-        flex:1;
-        color:#AA8F66;
-        font-size:20px;
-        margin:0px 0px 0px 2px; 
-        animation:logo 1s ease-in ;
-    }
-    .fas fa-mouse{
-        flex:1;
-        color:#AA8F66;
-        font-size:21px;
-        margin:0px;
-        animation:logo 1s ease-in ;
-    }
-    .logo .second{
-        flex:1;
-        font-size:20px;
-        font-family: 'Noto Sans', sans-serif;
-        font-weight:bold;
-        color:#4682B4;
-        animation:logo 1s ease-in ;
-    }
-    .logo p{
-        flex:1;
-        align-items:flex-start;
-        justify-content:center;
-        font-size:12px;
-        font-family: 'Poppins', sans-serif;
-    }
-    @keyframes logo{
-    0%{
-       font-size:0px;
-    }
-    100%{
-     font-size:20px;
-    }
-  }
-}
-/*-------------------------------*/
-
-/*--section0- Banner--*/
+/*--section0- Banner--*/ 
 #section0{
-    display:flex;
+    display:flex;                      /*-Flex is used in Banner -*/
     justify-content:center;
 }
 #section0{
     display:flex;
     justify-content:center;
-    align-items:center;
+    align-items:center;                    
     background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
 }
 .banner{
-    position:absolute;
+    position:absolute;            /*--Position of the Banner is set to be absolute-*/
     top:750px;
-    left:30%;  
+    left:30%;
+    z-index:1;  
 }
 .banner h2{
+    position:relative;        /*--Position of the h2 is set to be relative with z-index 0f 2-*/
+    z-index:2;
     padding:0px;
     margin:0px 0px 0px 10px;
     font-size:30px;
     font-family:'Montserrat', sans-serif;
-    color:#AA8F66;
+    color:#AA8F66;  
 }
-.words::before{
+
+/*--To change the content of the <span> , pseudo element
+ ::before is used as the first word need to change using animation--*/
+
+.words::before{                  
     content:'';
     border-top:5px solid #AA8F66;
     color:#fff;
@@ -232,10 +185,11 @@ a{
     font-weight:bold;
     font-size:35px;
     animation:banner 5s ease-in infinite ;
+    
 }
 @keyframes banner{
     0%{
-        content:'CREATE';
+        content:'CREATE';        /* content of ::before is changed in animation */
         font-family: 'Poppins', sans-serif;
     }
      50%{
@@ -249,14 +203,17 @@ a{
         border-radius:100%;
     }
 }
-.animation{
+  /*--Balloon image position is relative to the text on the banner and 
+    z-index is set 1,so it appear behind while floating upwards---*/
+.animation{                      
    width:100%;
    height:700px;
    position:relative;
+   z-index: 1;
    margin-top:20px;
 }
 
-.float1{
+.float1{               /*- Start position of the balloon floating animation is set-*/
     position:relative;
     top:10%;
     left:1%;
@@ -266,7 +223,7 @@ a{
     animation:balloon 5s linear ;
 }
 
-@keyframes balloon{
+@keyframes balloon{          /*--Balloon is translated in the Y-axis upwards-*/
     0%{
         transform:translateY(300px);
     }
@@ -280,7 +237,7 @@ a{
 /*-------------------------------*/
 /*--Section1--*/
 #section1{
-    background:#eee;
+    background:#fff;
     margin-top:50px;
     box-shadow:0px 8px 16px #333;
 }
@@ -290,9 +247,9 @@ a{
     padding:20px;
 }
 #section1 .main-article{
-    display:flex;
-    flex-direction:row;
-    flex-wrap:wrap;
+    display:flex;            /*-Flex is used in section1 */
+    flex-direction:row;      /*--within section1, content are appearing in rows-*/
+    flex-wrap:wrap;      /*- Flex-wrap keeps all the content adjust according to space -*/
     justify-content:space-between;
     margin:5px;
     padding:50px;   
@@ -310,8 +267,9 @@ a{
 .main-para{
     flex:1;
 }
+/* Within section1, heading,paragragh & button link have flex-direction of column */
 .main-para h2 p a{
-    display:flex;
+    display:flex;             
     flex-direction:column;
     margin:10px ;
 }
@@ -320,31 +278,31 @@ a{
    font-size:18px;
 }
 .main-para p{
-     font-size:12px;
+     font-size:18px;
      margin:10px 10px 25px 10px;
      padding:5px;
 }
 .main-para a {
     text-decoration:none;
-    margin:15px;
+    margin:10px;
     background: #4682B4;
-    padding:10px;
-    font-size:13px;
+    padding:8px;
+    font-size:12px;
     color:white;
 }
-.main-para a:hover{
+.main-para a:hover{            /*--Button on hover change color--*/
     background: #AA8F66;
     border:2px inset #AA8F66; 
 }
 a .btn{
-    margin:50px;
+    margin:20px;
     padding:5px;  
 }
 /*-------------------------------*/
 
 /*--Section2 video tutorials--*/
     #section2{
-        background:#eee;
+        background:#fff;
         margin-top:50px;
         padding:5px;
         color:#333; 
@@ -357,7 +315,7 @@ a .btn{
         width:100%;
         text-align:center;
     }
-    #section2 .article2{
+    #section2 .article2{   /*-Section2 has flex-direction set row -*/
         display:flex;
         flex-direction:row;
         flex-wrap:wrap;
@@ -367,7 +325,7 @@ a .btn{
     .para-two{
         flex-direction:row;
         flex:1;
-        order:1;
+        order:1;     /* Using order property of flex rows and columns can be switch places */
     }
     .image-two{
         flex:1;
@@ -379,8 +337,9 @@ a .btn{
         width:250px;
         height:160px;
     }
+    /* Within section2, heading,paragragh & button link have flex-direction of column */
     .para-two h3{
-        flex-direction:column;
+        flex-direction:column; 
         flex-wrap:wrap;
         font-size:18px;
         padding:0px;
@@ -400,7 +359,7 @@ a .btn{
         padding:8px;
         color:white;
     }
-    .para-two a:hover{
+    .para-two a:hover{               /*--Button on hover change color--*/
         background: #AA8F66;
         border:2px inset #AA8F66; 
     }
@@ -412,7 +371,7 @@ a .btn{
 
 /*--Section3 Books--*/
 #section3{
-    background:#eee;
+    background:#fff;
     margin-top:50px;
     padding:5px;
     color:#333;
@@ -428,7 +387,7 @@ a .btn{
 }
 #section3 .article2{
     display:flex;
-    flex-direction:row;
+    flex-direction:row;  /*-Section3 has flex-direction set row -*/
     flex-wrap:wrap;
     margin:15px;
     padding:20px;
@@ -436,24 +395,24 @@ a .btn{
 }
 .para-three{
     flex:1;
-    order:1;
+    order:2;      /* Here the order is switched in comparison to the prevoius section */
 }
 .image-three{
     flex:1;
-     order:2;
+    order:1;
 }
 .image-three img{
     margin:50px;
     width:200px;
     height:300px;
     box-shadow:0px 4px 8px #555;
-
 }
+/* Within section3, heading,paragragh & button link have flex-direction of column */
+
 .para-three h3{
     flex-direction:column;
     font-size:18px;
     padding:0px;
-
 }
 .para-three p{
     flex-direction:column;
@@ -469,7 +428,7 @@ a .btn{
     padding:10px;
     color:white;
 }
-.para-three a:hover{
+.para-three a:hover{               /*--Button on hover change color--*/
     background: #AA8F66;
     border:2px inset #AA8F66; 
 }
@@ -480,10 +439,10 @@ a .btn{
 }
 
 /*-------------------------------*/
-/*--Section4 More articles--*/
+/*--Section4 More articles-- this section have Javascript for resizing the images-*/
 #section4{
     display:flex;
-    flex-direction:row;
+    flex-direction:row;    /* Section 4 is set to have flex-direction row */
     flex-wrap:wrap;
     justify-content:center;
     color:#333;
@@ -491,7 +450,7 @@ a .btn{
 }
 #section4 .small1{
    flex:1;
-   order:1;
+   order:1;                  /*order is 1 for the first image*/
    align-content:center;
    flex-wrap:wrap;
 }
@@ -517,7 +476,7 @@ a .btn{
 }
 #section4 .small2{
    flex:1;
-   order:2;
+   order:2;              /*order is 2 for the second image*/
 }
 .small2 img{
     width:300px;
@@ -537,7 +496,7 @@ a .btn{
 
 #section4 .small3{
    flex:1;
-   order:3;
+   order:3;                  /*order is 3 for the third image*/
    align-content:center;
 }
 .small3 img{
@@ -560,7 +519,7 @@ a .btn{
 /*------------------------Footer-------------------------------*/
     footer{
         display:flex;
-        flex-direction:column;
+        flex-direction:column;   /*In Footer flex is used and direction is set column */
         flex-wrap:wrap;
         background:linear-gradient(180deg, rgba(0, 128, 128, 0) 0%, rgba(70, 130, 180, 0.88) 100%);
         text-align:center;
@@ -571,7 +530,7 @@ a .btn{
     }
     .logo-small {
         display:flex;
-        flex-direction:row;
+        flex-direction:row; /* For logo to appear inline direction is set row */
         flex-wrap:wrap;
     }
     .logo-small  .first{
@@ -582,7 +541,7 @@ a .btn{
         font-weight:bold;
         color:#0D5C63;
         margin:20px;
-        animation:logo 1s ease-in ; 
+        animation:logo 1s ease-in ;  /* Animation is used in the logo of the footer */
     }
     .logo-small  .mid{
         flex:1;
@@ -609,7 +568,7 @@ a .btn{
     }
     /*-animation logo-small*/
     @keyframes logo{
-        0%{
+        0%{                     /*In animation font-size changing gradually*/
         font-size:0px;
         }
         100%{
@@ -630,7 +589,7 @@ a .btn{
 /*--------------------- Articles Page-------------------------------------*/
 .container-3d{
     display:flex;
-    flex-direction:row;
+    flex-direction:row;         /*Flex is used and direction is set as row */
     flex-wrap:wrap;
     justify-content:space-around;
     margin:10px;
@@ -638,20 +597,18 @@ a .btn{
     border-top:2px solid #333;
   }
   .cover{
-     background:#AA8F66;
+     background:#AA8F66;              /* Cover feature heading code */
      padding:15px;
      color:white;
      width:200px;
      margin:0px 0px 40px 0px;
-     border:2px solid #90708C;
-  
+     border:2px solid #90708C; 
   }
-  .main{
+  .main{                       /*Paragraph margin and padding */
       padding:20px;
       margin-right:10px;
-  
   }
-  .author{
+  .author{                    /* Image of the author */
       width:60px;
       height:65px;
       padding:5px;
@@ -659,60 +616,54 @@ a .btn{
       background:#90708C;
       border-radius:50%;
   }
-  .light{
+  .light{                    /* lightbulb icon in content2 */
       font-size:30px;
-      color:black;
+      color:#fff;
   }
-  .light:hover{
+  .light:hover{             /* lightbulb icon in content2 on hover change colour*/
       font-size:40px;
       color:gold;
   }
-  small{
+  small{                      /*Information about author and date of article published  */      
       padding:10px;
       background:#4682B4;
       color:#fff;
   
   }
-  .main-audio{
+  .main-audio{                /*Audio synchronized to the text of content1 */
     outline:none;
-    margin:0px;
+    margin:0px 0px 20px 0px;
     background:#eee;
     border:2px solid#4682B4;
     width:250px;
 }
-  audio{
+ audio{                       /* Audio synchronized to the text of content2 */
       outline:none;
       margin:20px 0px 0px 0px;
       background:#eee;
       border:2px solid#4682B4;
       width:220px;
   }
-  time{
+  time{                         /*date and time information */
       padding-left:10px;
   }
-  article {
+  article {                     
       flex:4;
       justify-content:space-between;
   }
-  .image-cube {
-     width:300px;
-     height:300px;
-     margin-bottom:30px;
-  }
-  
-  .image-planet {
+  .image-planet {             /*image at the start of article 3*/
      width:300px;
      height:300px;  
   }
-  .image-3d {
+  .image-3d {                /*image at the start of article 2*/
      width:300px;
      height:300px;  
   }
   .image-3d:hover {
-      animation:balloons 2s linear; /* animation */
+      animation:balloons 2s linear; /* animation of image in article 2 on hover */
   }
   @keyframes balloons{
-      0%{
+      0%{                               /* translation of balloon upwards on hover */
           transform:translateY(60px);
       }
       100%{
@@ -720,57 +671,62 @@ a .btn{
       }
   }
   .content1{
-      flex:8;
+      flex:8;                /* content1 occupy 8 rows as it contains main articles */
   }
   .content1  h1{
       margin:20px;
       padding:20px;
-      text-transform:uppercase;
+      text-transform:uppercase; /* text is transformed from lowercase to uppercase letters*/
       font-size:30px;
   }
   .content1 p{
       margin:10px;
       line-height:30px;
   }
-  .content1 p::first-letter{  /* pseudo-element for making the first letter larger */
+  .content1 p::first-letter{  /* pseudo-element ::first for making the first letter larger */
       color:#333;
       font-size:30px;
   }
-  .code{
+  .content1 p::selection{ /* pseudo-element ::selection for specifically highlighting the text in the paragraph of main article */
+      color:#fff;
+      background:#0D5C63;
+  }
+  .code{                   /* image related to the main articles */
       width:300px;
       height:250px;
       padding:10px;  
   }
-  .code1{
+  .code1{                    /* image of code snippet article1 */
       width:350px;
       height:500px;
   }
-  .code2{
+  .code2{                     /* image of code snippet article2 */
       width:330px;
       height:400px;
       padding:10px; 
   }
-  .code3{
+  .code3{                    /* image of code snippet article3 */
       width:330px;
       height:400px;
       padding:10px; 
   }
-  figcaption{
+  figcaption{                 /* caption under the code snippets */
       padding-left:30px;
   }
-  .concept{
+  .concept{                   /*images inside content2*/
       display:flex;
       flex-wrap:wrap;
-      align-self:flex-start;
+      align-self:flex-start;    /*aligning the content to the start*/
       width:220px;
       height:200px;
       
   }
-  .content2{
+  .content2{                 /* content2 contains basic concepts*/
       width:400px;
       height:auto;
       font-size:10px;
   }
+  
   .para1 {
       margin:10px 10px 5px 5px;
       padding:0px;
@@ -784,6 +740,7 @@ a .btn{
     background:#AA8F66;
     color:white;
     font-size:16px;
+    
   }
   .content2  h3{
       padding:50px;
@@ -792,7 +749,7 @@ a .btn{
 
 /*----------------Videos Page--------------------------------*/
 .resource{
-    display:flex;
+    display:flex;                  /* SVG image */
     flex-wrap:wrap;
     justify-content:center;
     align-self:center;
@@ -802,7 +759,7 @@ a .btn{
     
 }
 .container-1{
-    display:flex;
+    display:flex;                  /* flex is used and directionof main container is row*/
     flex-direction:row;
     flex-wrap:wrap;
     justify-content:space-around;
@@ -812,8 +769,9 @@ a .btn{
     background:#90708C;
     color:#fff;
 }
-.box-1{
+.box-1{                          /* box-1 contains image as its content */
     flex:1;
+    order:1;
     padding:5px;
     margin:70px 30px 30px 50px;
 }
@@ -823,19 +781,19 @@ a .btn{
     border:5px solid #eee;
     border-radius:10%;
 }
-.box-2{
+.box-2{                         /* box-2 contains heading ,paragraph and button and their direction is column */
     flex:1;
+    order:2;
+    flex-direction:column;
     padding:20px ;
     margin:20px;
 }
-.box-2 p{
-    flex-direction:column;
+.box-2 p{ 
     font-size:15px;
     margin:5px;
     padding:5px;
 }
 .box-2 h3{
-    flex-direction:column;
     text-align:center;
     font-size:20px;
     padding:10px;
@@ -843,7 +801,7 @@ a .btn{
 }
 .container-2{
     display:flex;
-    flex-direction:row;
+    flex-direction:row;       /* flex is used and direction of main container is row*/
     flex-wrap:wrap;
     justify-content:space-around;
     border:1px solid #ccc;
@@ -853,7 +811,8 @@ a .btn{
     color:#fff;
 }
 .box-3{
-    flex:1;
+    flex:1; 
+    order:1;                       /* box-3 contains image as its content */
     padding:5px;
     margin:60px 30px 30px 50px;
 }
@@ -864,20 +823,18 @@ a .btn{
     border-radius:10%;
 }
 
-.box-4{
+.box-4{                     /* box-4 contains heading ,paragraph and button and their direction is column */
     flex:1;
-    order:1;
+    order:2; 
+    flex-direction:column;
     padding:20px;
 }
 .box-4 p{
-    flex-direction:column;
     font-size:15px;
     margin:5px;
     padding:5px;
-    
 }
 .box-4 h3{
-    flex-direction:column;
     text-align:center;
     font-size:20px;
     padding:10px;
@@ -885,7 +842,7 @@ a .btn{
 }
 .container-3{
     display:flex;
-    flex-direction:row;
+    flex-direction:row;       /* flex is used and directionof main container is row*/
     flex-wrap:wrap;
     justify-content:space-around;
     border:1px solid #ccc;
@@ -894,8 +851,9 @@ a .btn{
     background:#4682B4;
     color:#fff;
 }
-.box-5{
+.box-5{                        /* box-5 contains image as its content */
     flex:1;
+    order:1;
     padding:5px;
     margin:50px 30px 30px 50px;
      
@@ -906,18 +864,17 @@ a .btn{
     border:5px solid #eee;
     border-radius:10%;
 }
-.box-6{
+.box-6{                    /* box-6 contains heading ,paragraph and button and their direction is column */
     flex:1;
-   
-}
-.box-6 p{
+    order:2;
     flex-direction:column;
+}
+.box-6 p{ 
     font-size:15px;
     margin:5px;
     padding:5px;
 }
 .box-6 h3{
-    flex-direction:column;
     text-align:center;
     font-size:20px;
     padding:10px;
@@ -925,7 +882,7 @@ a .btn{
 }
 .container-4{
     display:flex;
-    flex-direction:row;
+    flex-direction:row;      /* flex is used and directionof main container is row*/
     flex-wrap:wrap;
     justify-content:space-around;
     border:1px solid #ccc;
@@ -934,8 +891,9 @@ a .btn{
     background:#90708C;
     color:#fff;  
 }
-.box-7{
+.box-7{                         /* box-7 contains image as its content */
     flex:1;
+    order:1;
     padding:5px;
     margin:80px 30px 30px 50px;  
 }
@@ -946,15 +904,15 @@ a .btn{
     border-radius:10%;
 }
 .box-8{
-    flex:1;
-    
+    flex:1;               /* box-8 contains heading ,paragraph and button and their direction is column */
+    order:2;
+    flex-direction:column;
 }
 .box-8 p{
     padding:15px;
     margin:30px;
 }
 .box-8 h3{
-    flex-direction:column;
     text-align:center;
     font-size:20px;
     padding:10px;
@@ -962,7 +920,7 @@ a .btn{
 }
 .container-5{
     display:flex;
-    flex-direction:row;
+    flex-direction:row;     /* flex is used and directionof main container is row*/
     flex-wrap:wrap;
     justify-content:space-around;
     border:1px solid #ccc;
@@ -972,7 +930,8 @@ a .btn{
     color:#fff;
 }
 .box-9{
-    flex:1;
+    flex:1; 
+    order:1;                            /* box-9 contains image as its content */
     padding:5px;
     margin:50px 30px 30px 50px;
    
@@ -983,15 +942,16 @@ a .btn{
     border:5px solid #eee;
     border-radius:10%;
 }
-.box-10{
+.box-10{                          /* box-10 contains heading ,paragraph and button and their direction is column */
     flex:1;
+    order:2;
+    flex-direction:column;
 }
 .box-10 p{
     padding:15px;
     margin:30px;
 }
-.box-10 h3{
-    flex-direction:column;
+.box-10 h3{ 
     text-align:center;
     font-size:20px;
     padding:10px;
@@ -999,18 +959,16 @@ a .btn{
 }
 .container-6{
     display:flex;
-    flex-direction:row;
+    flex-direction:row;  /*all videos are usings flex and their direction is row */
     flex-wrap:wrap;
     justify-content:space-around;
     border:1px solid #ccc;
 
 }
-video::-webkit-media-controls-panel {
-    background-image: linear-gradient(4.4rad,transparent,transparent)!important;  
-  }
+ 
 .video-1{
-    display:flex;
-    width:300px;
+    display:flex;           
+    width:250px;
     height:200px;
     margin:60px 60px 60px 30px;
       
@@ -1018,42 +976,42 @@ video::-webkit-media-controls-panel {
 
 .video-2{
     display:flex;
-    width:300px;
+    width:250px;
     height:200px;
     margin:60px 60px 60px 30px;
 }
 
 .video-3 {
     display:flex;
-    width:300px;
+    width:250px;
     height:200px;
     margin:60px 60px 60px 30px;
 }
 
 .video-4 {
     display:flex;
-    width:300px;
+    width:250px;
     height:200px;
     margin:60px 60px 60px 30px;
 }
 
 .video-5 {
     display:flex;
-    width:300px;
+    width:250px;
     height:200px;
     margin:60px 60px 60px 30px;
 }
 
 .video-6 {
     display:flex;
-    width:300px;
+    width:250px;
     height:200px;
     margin:60px 60px 60px 30px;
 }
 /*------------------------Videos Page Code Ends--------------------------*/
 
 /*----------Books Page---------------*/
-.resource{
+.resource{                              /*SVG image */
     display:flex;
     flex-wrap:wrap;
     align-self:center;
@@ -1062,16 +1020,9 @@ video::-webkit-media-controls-panel {
     padding:20px;
     margin:50px 0px 80px 0px;
 }
-.heading{
-    margin-top:20px;
-    padding:10px;
-    width:100%;
-    color:white;
-    background:teal;
-}
 
 .container-books1{
-    display:flex;
+    display:flex;                         /*Flex is used with direction of row */
     flex-direction:row;
     flex-wrap:wrap;
     margin:0px;
@@ -1079,7 +1030,7 @@ video::-webkit-media-controls-panel {
     width:100%;
     box-shadow:2px 4px 6px #ddd;
 }
-.new{
+.new{                                      /* Heading for new relaesed books*/
     align-self:flex-start;
     margin:5px;
     padding:10px;
@@ -1091,7 +1042,7 @@ video::-webkit-media-controls-panel {
     border:2px inset #AA8F66;
     border-radius:20px;
 }
-.old{
+.old{                                  /* Heading for recommended books*/
     align-self:flex-start;
     margin:5px;
     padding:10px;
@@ -1103,7 +1054,7 @@ video::-webkit-media-controls-panel {
     border:2px inset #0D5C63;
     border-radius:20px;
 }
-.book-front{
+.book-front{                            /* Images of front and back of the book*/
     width:180px;
     height:260px;
     box-shadow:18px 8px 26px 12px #ddd;
@@ -1113,26 +1064,25 @@ video::-webkit-media-controls-panel {
     height:265px;
     box-shadow:18px 8px 16px  #ddd;
 }
-.holder1 ,.holder2 ,.holder3{
+.holder1 ,.holder2 ,.holder3{       /*holders1 is for image ,holder2 is for information and holder3 for review of the book*/
     display:flex;
-    flex-direction:row;
-   
+    flex-direction:row;             /* flex-direction set to row */   
 }
 .holder2{
     display:flex;
-    flex-direction:column;
+    flex-direction:column;       /*contents of holder2 contains information in the column form*/ 
     margin:20px;
     padding:20px;
     
 }
 .holder3{
-    display:flex;
+    display:flex;                /*contents of holder3 also contains information in the column form*/ 
     flex-direction:column;
     margin:10px;
     padding:20px;
     width:300px;
 }
-pre small{
+pre small{                    
     color:black;
     font-size:15px;
     margin:10px
@@ -1141,71 +1091,80 @@ pre small{
 .info{
     background:transparent;
 }
-.bok-intro{
+.book-intro{
     flex-direction:column;
     margin:5px;
     padding:5px;
-    font-size:20px;
+    font-size:15px;
 }
 /*-------------------------------*/
 
 /*--------------Get In Touch Section------------------------*/
-main-intouch{
+main-intouch{               
     overflow-x:hidden;
     margin:0;
 }
-.mail{
-    display:flex;
+.mail{                        /*SVG image*/
+    display:flex;             
     flex-wrap:wrap;
     justify-content:flex-start;
-    align-self:center;
+    align-self:center;            /*SVG image aligned center */
     width:100%;
     height:300px;
     margin:20px;  
 }
 
 .in-touch1{
-    display:flex;
+    display:flex;                /* Flex is used with the direction of column and the content aligned center*/
     flex-direction:column;
     justify-content:center;
     align-items: center;
     margin-top:50px;
     padding:50px;
     height:300px;
-    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+
+    /*clip-path is creating a region over the div and masking the rest of the div ,in polygon
+     it takes the values from top left(x,y), top right(x,y),bottom right(x,y) and then bottom left(x,y) */
+
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%); 
+
     background:#AA8F66;
     color:#fff;
     font-size:17px;
     box-shadow:0px 4px 8px #ccc;
-    animation:sign ease-in 1s;
+    animation:sign ease-in 1s;      /* animation is added to the text*/ 
 }
 
 .in-touch2{
-    display:flex;
+    display:flex;               /* Flex is used with the direction of column and the content aligned center*/
     flex-direction:column;
     justify-content:center;
     align-items: center;
     margin:10px 0px 10px 0px;
     padding:80px;
     height:300px;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+    /*clip-path is creating a region over the div and masking the rest of the div ,
+     it takes the values from top left(x,y), top right(x,y),bottom right(x,y) and then bottom left(x,y) */
+
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%); 
+
     background:#90708C;
     color:#fff;
     font-size:17px;
     box-shadow:10px 4px 6px #ccc;
-    animation:sign ease-in 1s;
+    animation:sign ease-in 1s;           /* animation is added to the text*/ 
 }
 
 @keyframes sign{
-    0%{
+    0%{                             /*Fonts gradually change size as they ease-in*/
         font-size:0px;  
     }
     100%{
         font-size:15px; 
     }
 }
-.contact{
-    display:flex;
+.contact{                          /* e-mail contact information */
+    display:flex;                 /* Flex is used with the direction of column and the content aligned center*/
     flex-wrap:wrap;
     flex-direction:column;
     justify-content:space-around;
@@ -1215,10 +1174,10 @@ main-intouch{
     font-size:20px;
     color:#fff;
     font-weight:bold;
-    background-image:url("images/contact.svg");
+    background-image:url("images/contact.svg"); /* SVG image inserted as the background image */
     background-size:250px;
-    background-repeat:no-repeat;
-    background-position:center;
+    background-repeat:no-repeat;         /* no-repeat stops the image from repeating multiple times*/
+    background-position:center;          /*position is set center*/
     max-width:100%;
     height:400px;
     box-shadow:0px 4px 8px #ccc;
@@ -1231,29 +1190,29 @@ main-intouch{
     align-items:flex-start;
     margin:50px;
     padding:10px;
-    background-image:url("images/signup.svg");
-    background-repeat:no-repeat;
-    background-position:top right;
+    background-image:url("images/signup.svg"); /* SVG image inserted as the background image */
+    background-repeat:no-repeat;     /* no-repeat stops the image from repeating multiple times*/
+    background-position:top right;   /*position is set top and right*/
     background-size:500px;
     
 }
 
-.subscribe{
+.subscribe{                 /*Sign up form is using flex and its direction is set row and aligned at the start*/
     display:flex;
     flex-wrap:wrap;
     flex-direction:row;
     justify-content:space-between;
     align-items:flex-start;
     background:#AA8F66;
-    opacity:0.8;
+    opacity:0.8;                 /* Opacity is set to 0.8 so the image behind can be seen vaguely through it */
     margin:20px;
     padding:20px;
     border:2px solid #4682B4;
-    line-height:2em;
+    line-height:2em;                   /*line-height is set for spacing between the lines*/
     color:#fff;
     width:400px;
     font-size:20px;
-    box-shadow:0px 4px 6px #333;
+    box-shadow:0px 4px 6px #333;     /* box-shadow to highlight the signup box*/
 }
 .subscribe label{
     display:inline;
@@ -1262,11 +1221,11 @@ main-intouch{
     font-family:'Poppins', sans-serif;
     font-size:18px;
     font-weight:bold;
-    text-shadow:0px 4px 6px #333;
+    text-shadow:0px 4px 6px #333;  /* text-shadow to highlight the text */
 }
 .icon{
     color:#fff;
-    letter-spacing:6px;
+    letter-spacing:6px;       /* letter spacing is used to space out letters*/
     text-shadow:0px 4px 6px #333;
 }
 .subscribe input{
@@ -1274,7 +1233,7 @@ main-intouch{
     padding:10px;
 
 }
-.button{
+.button{                   /* Submit button*/
     margin-top:20px;
     color:#fff;
     font-size:20px;
@@ -1284,12 +1243,12 @@ main-intouch{
     background:#4682B4;
     box-shadow:0px 4px 6px #333;
 }
-.button:hover{
+.button:hover{               /* Submit button changes color on hover*/
     margin-top:20px;
-    color:yellow;
+    color:#fff;
     font-size:20px;
     padding:10px;
     width:100%;
-    background:teal;
+    background:#0D5C63;
 }
 /*--------------------Get In Touch Page Code Ends-----------------------*/

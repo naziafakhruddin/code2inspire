@@ -2,7 +2,7 @@
 /*--nav media min-width:417px--*/
 @media(min-width:415px){
     #small-nav{
-     display:none;
+     display:none;          /*Small nav is not displayed if the media is graeter than 414px*/
     } 
  }
  /*-------------------------------*/
@@ -13,7 +13,7 @@
      }
      /*--small screen navigation code--*/
      #small-nav{
-     display:flex;
+     display:flex;                   /*Flex is used and the direction is row */
      flex-wrap:wrap;
      align-self:center;
      background:transparent;
@@ -22,7 +22,7 @@
     }
      #small-nav li{
          list-style:none;
-         display:inline;
+         display:inline;         /* list display inline */
          padding:5px;
          color:#4682B4;
          margin:0px;
@@ -33,7 +33,7 @@
         font-family: 'Poppins', sans-serif;
         font-size:16px;
     }
-     #small-nav li a:hover{
+     #small-nav li a:hover{           /* border-bottom appears on hover */
        color:teal;
        padding-bottom:5px;
        border-bottom:2px solid teal;
@@ -86,7 +86,7 @@
         font-size:12px;
         font-family: 'Poppins', sans-serif;
     }
-    @keyframes logo{
+    @keyframes logo{          /*--animation is used to make the logo gradually become bigger-*/
         0%{
         font-size:0px;
         }
@@ -103,6 +103,8 @@
         font-family:'Noto Sans', sans-serif;
         color:#AA8F66;
     }
+    /*--To change the content of the <span> , pseudo element
+ ::before is used as the first word need to change using animation--*/
     .words::before{
         content:'';
         border-top:5px solid #AA8F66;
@@ -114,7 +116,7 @@
         animation:banner 5s ease-in infinite ;
     }
     @keyframes banner{
-        0%{
+        0%{                              /* content of ::before is changed in animation */
             content:'CREATE';
             font-family: 'Poppins', sans-serif;
         }
@@ -169,7 +171,6 @@
     }
     .main-para h2{
        padding:15px;
-    
     }
     .main-para p{
          font-size:15px;
@@ -184,7 +185,7 @@
         font-size:10px;
         color:white;
     }
-    .main-para a:hover{
+    .main-para a:hover{              /*--Button on hover change color--*/
         background: #AA8F66;
         border:2px inset #AA8F66; 
     }
@@ -219,7 +220,7 @@
     }
     .image-two iframe{
         margin:50px 10px 10px 10px;
-        width:100%;
+        width:100%;           /* width set to 100% makes it easily adjustable  */
         height:200px;
     }
     .para-two h3{
@@ -240,7 +241,7 @@
         color:white;
     }
     .para-two a:hover{
-        background: #AA8F66;
+        background: #AA8F66;            /*--Button on hover change color--*/
         border:2px inset #AA8F66; 
     }
     a .btn{
@@ -301,7 +302,7 @@
         padding:10px;
         color:white;
     }
-    .para-three a:hover{
+    .para-three a:hover{                       /*--Button on hover change color--*/
         background: #AA8F66;
         border:2px inset #AA8F66; 
     }
@@ -467,7 +468,7 @@
     .image-3d:hover {
         animation:balloons 2s linear;
     }
-    @keyframes balloons{
+    @keyframes balloons{             /* animation of translation of balloon upwards on hover */
         0%{
             transform:translateY(60px);
         }
@@ -740,9 +741,7 @@
         border:none;
     }
     /*-video tag -*/
-    video::-webkit-media-controls-panel {
-        background-image:linear-gradient(4.2rad,transparent,transparent) !important;
-      }
+    
     .video-1{
         display:flex;
         flex-wrap:wrap;   
@@ -960,9 +959,8 @@
         font-size:12px;
         box-shadow:10px 4px 6px #ccc;
         animation:sign ease-in 1s;
-    }
-
-    @keyframes sign{
+    }                     
+    @keyframes sign{              /*text animation */
         0%{
             font-size:0px;  
         }
@@ -1051,9 +1049,9 @@
         box-shadow:0px 4px 6px #333;
         text-shadow:0px 4px 6px #333;
     }
-    .button:hover{
+    .button:hover{                       /*button changing colour on hover */
         margin-top:20px;
-        color:yellow;
+        color:#fff;
         font-size:18px;
         padding:10px;
         width:100%;

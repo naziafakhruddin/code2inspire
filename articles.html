@@ -96,9 +96,11 @@
             </p>
 
             <figure>
-                <img class="code1" src="images/code-radial.png" alt="radial pattern">
+                <a href="images/code-radial.png" target="_blank">
+                    <img class="code1" src="images/code-radial.png" alt="radial pattern">
+                </a>
                  <figcaption>
-                    <em> Code snippet.</em> 
+                    <em> Click on the image to see the code in a new window.</em> 
                 </figcaption>
              </figure>
              <p class="main">
@@ -132,19 +134,21 @@
          <img class="image-3d" src="images/floating.svg" alt="cubes picture">
          <h1>Making a floating illusion in 3D.</h1>
          <div class="meta">
-             <small>
-                 <img class="author" src="images/author.png" alt="author picture"> 
-                 Written By Jake Doe 
-                 <time datetime="2021-01-31"> Jan 31<sup>th</sup>, 2021</time>
-             </small>
+            <small>
+                <img class="author" src="images/author.png" alt="author picture"> 
+                    Written By Jake Doe 
+                <time datetime="2021-01-31"> Jan 31<sup>th</sup>, 2021</time>
+            </small>
          </div>
          <p class="main">
             In p5.js, function setup() runs once , where as function draw() runs continously in a loop.Like a painter’s canvas , we will be seeing our code’s result on the browser’s canvas.In function setup the canvas is created by createCanvas() function. We can change the width and height of our canvas by changing the parameter values of createCanvas() function.To access the 3D library you need to add a third parameter WEBGL to createCanvas() function.First let’s make a ball, to do this you have write the code in function draw(),because we need to rotate our ball and this requires the function draw()to run continuously.The ball is created by function sphere() which has a paramter for the radius of 900.This bigger sphere will be in the background.Now, make another sphere of the size 80.Now, we want to add a texture to this sphere , but how will we do it? .First find a texture with a white background and horizontal lines and upload it to p5.js, now we need to load it so that we can add it to the texture.
          </p>
          <figure>
-           <img class="code2" src="images/code2.png" alt="code snippet" >
+            <a href="images/code2.png" target="_blank">
+                <img class="code2" src="images/code2.png" alt="code snippet" >
+            </a>
              <figcaption>
-                <em> Code snippet.</em>  
+                <em> Click on the image to see the code in a new window.</em> 
             </figcaption>
          </figure>
          <p class="main">
@@ -207,21 +211,23 @@
              for it to make it bigger or smaller .Now we have created a sphere,but it is just static , to fix this
              we write rotateZ() and give the parameter of angle which was the variable which we made before .
              You can change the value of angle in draw to make it rotate slower or faster .
-          </p>
-          <figure>
+        </p>
+        <figure>
+            <a href="images/code3.png" target="_blank">
             <img class="code3" src="images/code3.png" alt="code snippet" >
+            </a>
             <figcaption>
-                <em> Code snippet.</em>  
+                <em> Click on the image to see the code in a new window.</em>  
             </figcaption>
-         </figure>
-         <p class="main">
+        </figure>
+        <p class="main">
                  We have put translate() to make it move away from the center.Right now we are only using one co-ordinate,
                  which is x , but you can use other co-ordinates which are y and z by changing their values.
                  I have also decreased the angle in draw so that it is slower and easier to see.Inside the second push
                  and pop we write translate() with the values 100,0,0 but, you can change the values however you want.
                  Now all we have to do is make a sphere after translate with the parameter of 25.
-         </p>
-         <figure>
+        </p>
+        <figure>
            <img class="code" src="images/motion.png" alt="planetary motion">
          </figure>
          <audio controls class="main-audio">
