@@ -203,4 +203,4 @@ Resources:
       ArtifactStore:
         Type: S3
         Location: !Ref ArtifactBucket
-  Outputs: {}
+Outputs: {}
