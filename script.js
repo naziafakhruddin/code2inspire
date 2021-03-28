@@ -54,11 +54,11 @@
                shape.noFill();
 
                //mouseY is used to change the colour of the stroke when hover over.
-               shape.stroke(radius,mouseY, i);  
+               shape.stroke(i,radius, mouseY);  
 
                shape.strokeWeight(5);
-               radius += 1.5;
-               shape.ellipse(i, i,radius + i, radius + i);
+               radius += 0.2;
+               shape.rect(i, i,radius + i, radius + i);
 
                //using the conditional to make the ellipse repeatedly appear
                if (radius > width || radius < 0 || radius > height || radius < 0) {
@@ -68,7 +68,7 @@
            /* Code for the text to appear as a texture.With mouseY in the stroke and fill
            on hover the colour will change , making it interactive. */
            shape.stroke(255, 255, mouseY);
-           shape.fill(mouseY, 168, 255);
+           shape.fill(mouseY, mouseX, 255);
            shape.textSize(50);
            shape.text("CODE",50,120);
            
@@ -82,6 +82,6 @@
            rotateZ(angle1);
            box(100);    
        pop()
-       angle1 += 0.008;
+       angle1 += 0.003;
    }
    
