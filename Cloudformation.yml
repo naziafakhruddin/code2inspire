@@ -1,7 +1,7 @@
 AWSTemplateFormatVersion: 2010-09-09
 Description: >-
   Creates a CloudWatch Rule, SNS topic and Subscription to notify through email
-  when changes Pipeline Execution state changes
+  when changes Pipeline Execution state changes.
 Parameters:
   DomainName:
     Type: String
