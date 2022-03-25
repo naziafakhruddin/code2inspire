@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io (7)/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io (7)/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io (7)/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>C2I 2D Tutorial</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CXRTE9H797"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-CXRTE9H797');
+    </script>
+</head>
+<body>
+    <div class="menu-btn">
+        <i class="fa-solid fa-bars "></i>
+    </div>
+    <div class="container">
+      <!--Nav-->
+      <nav class="main-nav">
+         <img src ="img/logo.png" alt=" logo"class="logo" >
+        
+          <ul class="main-menu ">
+              <li><a href="index.html" class="current-pg">Home</a></li>
+              <li><a href="canvas.html">Tutorials</a></li>
+              <li><a href="#">Services</a></li>
+          </ul>
+      </nav>
+      <section id="article">
+          <div class="container">
+              <div class="page-container">
+                  <article class="card">
+                     <h1 class="l-heading">
+                         2D SHAPES
+                     </h1><br>
+                     <div class="meta">
+                         <small>
+                              25 November 2019 | Javascript , p5.js
+                         </small>
+                     </div><br>
+                     <p>
+                        <h3><u>LINE :</u></h3><br><br>
+                        <b>line( x1 , y1 , x2 , y2 )</b><br><br>
+                        
+                        Line got four parameters.First two parameters are beginning x-axis and y-axis point .
+                        And the third and fourth parameters are the end point x-axis and y-axis.<br><br>
+                        <a href="img/line.png" target="_blank"> 
+                            <img class="artimg" src="img/line.png">
+                        </a><br><br>
+                        Code:
+                        <a href="img/line2.png" target="_blank"> 
+                            <img class="artimg" src="img/line2.png">
+                        </a><br><br>
+                        Now, try changing parameters. <br><br>
+
+                        <h3><u>ELLIPSE :</u></h3><br><br>
+                        <b>ellipse( x , y , width , height )</b><br><br>
+
+                        Ellipse also have four parameters, x-axis and  y-axis and width and the height.
+                        The origin of the ellipse is in the centre .If the width and the height are same then a circle is formed.<br><br>
+                        But, if they are different they form an ellipse.<br><br>
+                        <a href="img/circle.png" target="_blank"> 
+                            <img class="artimg" src="img/circle.png">
+                        </a><br><br>
+                        Code:
+                        <a href="img/circle3.png" target="_blank"> 
+                            <img class="artimg" src="img/circle3.png">
+                        </a><br><br>
+
+                        Now, try changing parameters and colours.<br><br> 
+
+                        <h3><u>RECTANGLE OR SQUARE :</u></h3><br><br>
+                        <b>rect( x , y , width , height )</b><br><br>
+
+                        Rect also got four parameter similar to the ellipse.The only difference is it's origin 
+                        which is at the top left hand corner.It forms a square when the width and height are same.<br><br>
+                        <a href="img/square.png" target="_blank"> 
+                            <img class="artimg" src="img/square.png">
+                        </a><br><br>
+
+                        But , when they are different it forms a rectangle shape.<br><br>
+                        <a href="img/square2.png" target="_blank"> 
+                            <img class="artimg" src="img/square2.png">
+                        </a><br><br>
+                        Code:
+                        <a href="img/square3.png" target="_blank"> 
+                            <img class="artimg" src="img/square3.png">
+                        </a><br><br>
+                        Try changing parameters and colours. <br><br>
+
+                        <h3><u>ARC :</u></h3><br><br>
+                        <b>arc( x-axis , y-axis , width , height , start , stop ) </b><br><br>
+
+                        Arc got six parameters x-axis ,y-axis ,width ,height ,starting point and final stop is
+                        where the angle is starting and finishing.There is a optional parameter CHORD and OPEN .<br><br>
+                        If we add CHORD the arc becomes a close shape ,while the OPEN will not form any border and remain open. <br><br>
+                        Code:
+                        <a href="img/arc.png" target="_blank"> 
+                            <img class="artimg" src="img/arc.png">
+                        </a><br><br>
+                        
+                        <h3><u>TRIANGLE :</u></h3><br><br>
+                        <b>triangle(x1, y1, x2, y2, x3, y3)</b><br><br>
+
+                        Arc got six parameters first two x and y coordinates are for the first point,second set of x and y coordinates are for second point 
+                        and the third set of x and y coordinates specify the third point of the triangle .<br><br>
+                        <a href="img/triangle.png" target="_blank"> 
+                            <img class="artimg" src="img/triangle.png">
+                        </a><br><br>
+                        Code:<br><br>
+                        <a href="img/triangle2.png" target="_blank"> 
+                            <img class="artimg" src="img/triangle2.png">
+                        </a><br><br>
+                        Now ,try making a 2D shape face with all the shapes.<br><br>
+                        <a href="img/face.png" target="_blank"> 
+                            <img class="artimg" src="img/face.png">
+                        </a><br><br>
+                     </p><br>
+                  </article>
+                  <aside id="categories" class="card ">
+                      <h2> NEXT UP</h2>
+                      <ul class="list">
+                        <img class="next" src="img/blog2.png">
+                        <li><a  class="next" href="canvas.html"> CANVAS IN BROWSER </a><i class="fas fa-chevron-right"></i></li><br>
+                        <img class="next" src="img/ship.png">
+                        <li><a href="3d.html"> 3D SHAPES </a><i class="fas fa-chevron-right"></i></li><br>
+                        <img class="next" src="img/robologo.png">
+                        <li><a href="map.html"> MAPPING AND RANDOM </a><i class="fas fa-chevron-right"></i></li><br>
+                    </ul>
+                  </aside>
+              </div>
+          </div>
+      </section>
+
+
+      <footer class="footer">
+        <div class="footer-inner">
+            <div>
+                <img src ="img/logo.png" alt=" logo"class="logo-small" >
+            </div>
+            <div>
+                <a target="_blank" href="https://twitter.com/NZAmbience"><i class="fa-brands fa-twitter" id="tw" alt="twitter"></i></a> 
+                <a target="_blank" href="https://www.youtube.com/channel/UCTWCJh3YwDTQ8hM_4MJ2YJA"><i class="fa-brands fa-youtube" id="yt" alt="youtube"></i></a>
+                <a target="_blank" href="https://medium.com/@naziafakhruddin"><i class="fa-brands fa-medium" id="md"alt="medium"></i></a>
+                
+            </div>
+            <div>
+                <a href="#" class="a-foot">&copy; Code2Inspire 2022</a>
+            </div>         
+        </div>
+    </footer>
+     
+</body>
+</html>

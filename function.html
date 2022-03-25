@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io (7)/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io (7)/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io (7)/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>C2I Function Tutorial</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CXRTE9H797"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-CXRTE9H797');
+    </script>
+</head>
+<body>
+    <div class="menu-btn">
+        <i class="fa-solid fa-bars "></i>
+    </div>
+    <div class="container">
+      <!--Nav-->
+      <nav class="main-nav">
+         <img src ="img/logo.png" alt=" logo"class="logo" >
+        
+          <ul class="main-menu ">
+              <li><a href="index.html" class="current-pg">Home</a></li>
+              <li><a href="canvas.html">Tutorials</a></li>
+              <li><a href="#">Services</a></li>
+          </ul>
+      </nav>
+      <section id="article">
+          <div class="container">
+              <div class="page-container">
+                  <article class="card">
+                     <h1 class="l-heading">
+                         FUNCTION
+                     </h1><br>
+                     <div class="meta">
+                         <small>
+                              30 October 2019 | Javascript , p5.js
+                         </small>
+                     </div><br>
+                     <p>
+                        Function performs specific tasks based on input parameters.<br><br>
+                        A function can be built – in or user defined. For example: <br><br>
+                        <b>ellipse(x-axis, y-axis, width, height)</b><br>
+                        or <br>
+                        <b>random(min, max) are built-in functions.</b><br><br>
+
+                        <h3><u>ACTIVITY</u></h3><br><br>
+                        Now , try to make an object with the shapes we have just made.
+                        Then add some mouse interaction for fun.<br><br>
+                        <a href="img/func1.png" target="_blank">
+                            <img class="artimg2" src="img/func1.png">
+                        </a><br><br>
+
+                        To see the difference between <b>function setup()</b> and <b>function draw()</b>,
+                        let's move the <b>background</b> from function draw() to <b>function setup()</b>. <br><br>
+                        <a href="img/func2.png" target="_blank">
+                            <img class="artimg2" src="img/func2.png">
+                        </a><br><br>
+
+                        Since the <b>function draw() runs repeatedly</b> the background forms repeatedly and acts as a eraser 
+                        that's why you can see only one square,but when the background is in the <b>function setup() which 
+                        runs only once</b>,it only form once in the beginning, hence all the squares which are forming are visible.
+                       
+                     </p> 
+                  </article>
+                  <aside id="categories" class="card ">
+                      <h2> NEXT UP</h2>
+                      <ul class="list">
+                        <img class="next" src="img/blog2.png">
+                        <li><a href="variables.html">VARIABLES </a><i class="fas fa-chevron-right"></i></li><br>
+                        <img class="next" src="img/ship.png">
+                        <li><a href="translate.html">TRANSLATE AND ROTATE </a><i class="fas fa-chevron-right"></i></li><br>
+                        <img class="next" src="img/robologo.png">
+                        <li><a href="map.html"> MAPPING AND RANDOM </a><i class="fas fa-chevron-right"></i></li><br>
+                    </ul>
+                  </aside>
+              </div>
+          </div>
+      </section>
+
+
+      <footer class="footer">
+        <div class="footer-inner">
+            <div>
+                <img src ="img/logo.png" alt=" logo"class="logo-small" >
+            </div>
+            <div>
+                <a target="_blank" href="https://twitter.com/NZAmbience"><i class="fa-brands fa-twitter" id="tw" alt="twitter"></i></a> 
+                <a target="_blank" href="https://www.youtube.com/channel/UCTWCJh3YwDTQ8hM_4MJ2YJA"><i class="fa-brands fa-youtube" id="yt" alt="youtube"></i></a>
+                <a target="_blank" href="https://medium.com/@naziafakhruddin"><i class="fa-brands fa-medium" id="md"alt="medium"></i></a>
+                
+            </div>
+            <div>
+                <a href="#" class="a-foot">&copy; Code2Inspire 2022</a>
+            </div>         
+        </div>
+    </footer>
+     
+</body>
+</html>

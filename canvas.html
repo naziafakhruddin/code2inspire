@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io (7)/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io (7)/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io (7)/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>C2I Canvas Tutorial</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CXRTE9H797"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-CXRTE9H797');
+    </script>
+</head>
+<body>
+    <div class="menu-btn">
+        <i class="fa-solid fa-bars "></i>
+    </div>
+    <div class="container">
+      <!--Nav-->
+      <nav class="main-nav">
+         <img src ="img/logo.png" alt=" logo"class="logo" >
+        
+          <ul class="main-menu ">
+              <li><a href="index.html" class="current-pg">Home</a></li>
+              <li><a href="canvas.html">Tutorials</a></li>
+              <li><a href="#">Services</a></li>
+          </ul>
+      </nav>
+      <section id="article">
+          <div class="container">
+              <div class="page-container">
+                  <article class="card">
+                     <h1 class="l-heading">
+                         Canvas in Browser
+                     </h1><br>
+                     <div class="meta">
+                         <small>
+                              5 December 2019 | Javascript
+                         </small>
+                     </div><br>
+                     <p>
+                        A place in browser to draw graphics.<br>
+                        <br>
+                        For drawing the canvas, the function <b>createCanvas(width, height)</b> is used in the function setup().
+                        Width and height of the canvas can be same or different. for e.g.<br><br>
+                        <b>createCanvas(400, 400);</b><br>
+                        <b>createCanvas(300, 600);</b><br><br>
+                        It can be the same width and height as of the browser window. for e.g.<br><br>
+                        <b>createCanvas(windowWidth, windowHeight);</b><br><br> 
+                        
+                        In Canvas the origin is at the top left corner and the coordinates are indicated relative to the origin. For the background of the canvas ,the function background(colour)<br><br>
+                        * Monochrome - between black(0)and white(255)<br><br>
+                        <b>background(220);</b><br><br>
+                        * Colour in RGB (red, green, blue)<br>
+                        Each of the three colours have a range from 0-255(r = 0-255, g = 0-255, b = 0-255)<br><br>
+                        <b>background(155,110,250) </b><br><br>
+                        <a href="img/coor2.png" target="_blank"> 
+                            <img class="artimg" src="img/coor2.png">
+                        </a><br><br>
+                     </p><br>
+                  </article>
+                  <aside id="categories" class="card ">
+                      <h2> NEXT UP</h2>
+                      <ul class="list">
+                        <img class="next" src="img/coordinates.png">
+                        <li><a href="coord.html"> COORDINATES IN 2D AND 3D </a><i class="fas fa-chevron-right"></i></li><br>
+                        <img class="next" src="img/blog2.png">
+                        <li><a  class="next" href="2d.html"> 2D SHAPES </a><i class="fas fa-chevron-right"></i></li>
+                        <img class="next" src="img/3Dchain.png">
+                        <li><a href="3d.html"> 3D SHAPES </a><i class="fas fa-chevron-right"></i></li>
+                    </ul>
+                  </aside>
+              </div>
+          </div>
+      </section>
+
+
+      <footer class="footer">
+        <div class="footer-inner">
+            <div>
+                <img src ="img/logo.png" alt=" logo"class="logo-small" >
+            </div>
+            <div>
+                <a target="_blank" href="https://twitter.com/NZAmbience"><i class="fa-brands fa-twitter" id="tw" alt="twitter"></i></a> 
+                <a target="_blank" href="https://www.youtube.com/channel/UCTWCJh3YwDTQ8hM_4MJ2YJA"><i class="fa-brands fa-youtube" id="yt" alt="youtube"></i></a>
+                <a target="_blank" href="https://medium.com/@naziafakhruddin"><i class="fa-brands fa-medium" id="md"alt="medium"></i></a>
+                
+            </div>
+            <div>
+                <a href="#" class="a-foot">&copy; Code2Inspire 2022</a>
+            </div>         
+        </div>
+    </footer>
+     
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io (7)/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io (7)/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io (7)/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>C2I 3D Tutorial</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CXRTE9H797"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-CXRTE9H797');
+    </script>
+</head>
+<body>
+    <div class="menu-btn">
+        <i class="fa-solid fa-bars "></i>
+    </div>
+    <div class="container">
+      <!--Nav-->
+      <nav class="main-nav">
+         <img src ="img/logo.png" alt=" logo"class="logo" >
+        
+          <ul class="main-menu ">
+              <li><a href="index.html" class="current-pg">Home</a></li>
+              <li><a href="canvas.html">Tutorials</a></li>
+              <li><a href="#">Services</a></li>
+          </ul>
+      </nav>
+      <section id="article">
+          <div class="container">
+              <div class="page-container">
+                  <article class="card">
+                     <h1 class="l-heading">
+                         3D SHAPES
+                     </h1><br>
+                     <div class="meta">
+                         <small>
+                              14 November 2019 | Javascript , p5.js
+                         </small>
+                     </div><br>
+                     <p>
+                        For making the 3D shapes ,we need to add the WEBGL parameter in the createCanvas(). <br><br>
+                        
+                        <h3><u>Box</u></h3><br>
+                        <b>box(with,height,depth)</b><br><br>
+                        <a href="img/box.png" target="_blank"> 
+                            <img class="artimg2" src="img/box.png">
+                        </a><br><br>
+
+                        <h3><u>Ellipsoid</u></h3><br>
+                        <b>ellipsoid(radiusX,radiusY,radiusZ, detailX, detailY) </b><br><br>
+                        <a href="img/ellipsoid.png" target="_blank"> 
+                            <img class="artimg2" src="img/ellipsoid.png">
+                        </a><br><br>
+
+                        <h3><u>Torus</u></h3><br>
+                        <b>torus(radius,tuberadius,detailX,detailY) </b><br><br>
+                        <a href="img/torus.png" target="_blank"> 
+                            <img class="artimg2" src="img/torus.png">
+                        </a><br><br>
+
+                        <h3><u>Cone</u></h3><br>
+                        <b>cone(radius,height,detailX,detailY) </b><br><br>
+                        <a href="img/cone.png" target="_blank"> 
+                            <img class="artimg2" src="img/cone.png">
+                        </a><br><br>
+
+                        <h3><u>Sphere</u></h3><br>
+                        <b>sphere(radius) </b><br><br>
+                        <a href="img/sphere.png" target="_blank"> 
+                            <img class="artimg2" src="img/sphere.png">
+                        </a><br><br>
+
+                        To fill the colour in the 3D shapes ,the simplest way is to write normalMaterial() function.
+                        The colours will automatically appear on the 3D object.<br><br>
+                        <a href="img/texture.png" target="_blank"> 
+                            <img class="artimg2" src="img/texture.png">
+                        </a><br><br>    
+                        But these shapes doesn't look like 3D ,to make them look like 3D we need to rotate our shapes.For that ,first make the  global variable of angle and initialise it with zero. Then in the draw function , update the angle . In WEBGL rotate function works as rotateX, rotateY and rotateZ. 
+                        Try rotating in different axis separately to see how they move.<br><br>
+                        rotateX<br>
+                        <a href="img/rotate1.png" target="_blank"> 
+                            <img class="artimg2" src="img/rotate1.png">
+                        </a><br><br>
+                        rotateY<br>
+                        <a href="img/rotate2.png" target="_blank"> 
+                            <img class="artimg2" src="img/rotate2.png">
+                        </a><br><br>
+                        rotateZ<br>
+                        <a href="img/rotat3.png" target="_blank"> 
+                            <img class="artimg2" src="img/rotat3.png">
+                        </a><br><br>
+
+                        Now, in this rotate function put the variable of angle ,to make the shapes rotate.<br><br>
+                        It's your turn to make the shapes rotate .<br><br>
+                        <a href="img/rotate4.png" target="_blank"> 
+                            <img class="artimg2" src="img/rotate4.png">
+                        </a><br><br>
+                        Happy Coding!!!.<br><br>
+
+                     </p> 
+                  </article>
+                  <aside id="categories" class="card ">
+                      <h2> NEXT UP</h2>
+                      <ul class="list">
+                        <img class="next" src="img/blog2.png">
+                        <li><a  class="next" href="canvas.html"> CANVAS IN BROWSER </a><i class="fas fa-chevron-right"></i></li><br>
+                        <img class="next" src="img/ship.png">
+                        <li><a href="2d.html"> 2D SHAPES </a><i class="fas fa-chevron-right"></i></li><br>
+                        <img class="next" src="img/robologo.png">
+                        <li><a href="map.html"> MAPPING AND RANDOM </a><i class="fas fa-chevron-right"></i></li><br>
+                    </ul>
+                  </aside>
+              </div>
+          </div>
+      </section>
+
+
+      <footer class="footer">
+        <div class="footer-inner">
+            <div>
+                <img src ="img/logo.png" alt=" logo"class="logo-small" >
+            </div>
+            <div>
+                <a target="_blank" href="https://twitter.com/NZAmbience"><i class="fa-brands fa-twitter" id="tw" alt="twitter"></i></a> 
+                <a target="_blank" href="https://www.youtube.com/channel/UCTWCJh3YwDTQ8hM_4MJ2YJA"><i class="fa-brands fa-youtube" id="yt" alt="youtube"></i></a>
+                <a target="_blank" href="https://medium.com/@naziafakhruddin"><i class="fa-brands fa-medium" id="md"alt="medium"></i></a>
+                
+            </div>
+            <div>
+                <a href="#" class="a-foot">&copy; Code2Inspire 2022</a>
+            </div>         
+        </div>
+    </footer>
+     
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io (7)/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io (7)/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io (7)/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>C2I Translate and Rotate Tutorial</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CXRTE9H797"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-CXRTE9H797');
+    </script>
+</head>
+<body>
+    <div class="menu-btn">
+        <i class="fa-solid fa-bars "></i>
+    </div>
+    <div class="container">
+      <!--Nav-->
+      <nav class="main-nav">
+         <img src ="img/logo.png" alt=" logo"class="logo" >
+        
+          <ul class="main-menu ">
+              <li><a href="index.html" class="current-pg">Home</a></li>
+              <li><a href="canvas.html">Tutorials</a></li>
+              <li><a href="#">Services</a></li>
+          </ul>
+      </nav>
+      <section id="article">
+          <div class="container">
+              <div class="page-container">
+                  <article class="card">
+                     <h1 class="l-heading">
+                         TRANSLATE AND ROTATE
+                     </h1><br>
+                     <div class="meta">
+                         <small>
+                              7 November 2019 | Javascript , p5.js
+                         </small>
+                     </div><br>
+                     <p>
+                       <h3><u>TRANSLATE</u></h3><br> 
+                       This function changes the original x-axis and y-axis positions to a new position. 
+                       For example , the origin is x=20 and y=20 ,now translate it to a new origin x=250 and y=250.<br><br>
+                       <b>translate(x-axis , y-axis)</b><br><br>
+                       <a href="img/translate.png" target="_blank"> 
+                            <img class="artimg2" src="img/translate.png">
+                        </a><br><br>
+                       You can translate an object in 2D as well as in the 3D .In 3D ,since the origin is in the middle ,so when
+                       translate up or left the values becomes negative .But as we move down or right the value remain positive .
+                       We need to put our code inside the push() and pop().So one translate does not effect the other translate function.<br><br>
+                       <a href="img/translate2.png" target="_blank">  
+                            <img class="artimg2" src="img/translate2.png">
+                       </a><br><br>
+                       <h3><u>ROTATE</u></h3><br> 
+                       Rotation in 2D is quiet simple as it just requires the rotate() function.As we know that the origin of square or rectangle 
+                       are on the top left hand corner ,so for rotating a square from the middle p5.js have the function of rectMode(CENTER), 
+                       which when used in the setup the rectangle and translate it , will start rotating from the middle.<br><br>
+                       <a href="img/2drotate.png" target="_blank"> 
+                            <img class="artimg2" src="img/2drotate.png">
+                        </a><br><br>
+
+                       Rotation in 3D is different ,as the rotate function work along the specific axis .In the x-axis is rotateX ,in y-axis is rotateY and 
+                       in the z-axis is rotateZ.<br><br>
+                       rotateX<br>
+                        <a href="img/rotate1.png" target="_blank"> 
+                            <img class="artimg2" src="img/rotate1.png">
+                        </a><br><br>
+                       rotateY<br>
+                       <a href="img/rotate2.png" target="_blank">
+                            <img class="artimg2" src="img/rotate2.png">
+                       </a><br><br>
+                       rotateZ<br>
+                       <a href="img/rotat3.png" target="_blank"> 
+                            <img class="artimg2" src="img/rotat3.png">
+                       </a><br><br>
+                       These rotate functions can be used separately as well as together.<br><br>
+                       <a href="img/rotate4.png" target="_blank"> 
+                            <img class="artimg2" src="img/rotate4.png">
+                       </a><br><br>
+
+                       Rotate take the parameter of angle either in radians or degrees .<b>rotateX(angle)</b><br><br>
+                       <b>For example:</b><br><br>
+                       <u>Rotate in 2D with angle in radians</u><br><br>
+                       <b>rotate(HALF_PI)</b><br><br>
+                       <u>Rotate in 3D with angle in radians  </u><br><br>
+                       <b>rotateX(HALF_PI)</b><br><br>
+                       Radians are angle measurements based on the value of "PI" and is used to rotate objects.
+                       Four radian values are frequently used and their equivalent degrees are given below.<br><br>
+                       <b>* TWO_PI = 360 degrees</b><br><br> 
+                       <b>* PI = 180 degrees </b><br><br> 
+                       <b>* HALF_PI = 90 degrees </b><br><br> 
+                       <b>* QUARTER_PI = 45 degrees </b><br><br> 
+                       <a href="img/radian.png" target="_blank"> 
+                            <img class="artimg2" src="img/radian.png">
+                       </a><br><br>
+
+
+
+
+                     </p> 
+                  </article>
+                  <aside id="categories" class="card ">
+                      <h2> NEXT UP</h2>
+                      <ul class="list">
+                        <img class="next" src="img/blog2.png">
+                        <li><a href="3d.html"> 3D SHAPES </a><i class="fas fa-chevron-right"></i></li><br>
+                        <img class="next" src="img/ship.png">
+                        <li><a href="translate.html"> TRANSLATE AND ROTATE </a><i class="fas fa-chevron-right"></i></li><br>
+                        <img class="next" src="img/robologo.png">
+                        <li><a href="function.html"> FUNCTION </a><i class="fas fa-chevron-right"></i></li><br>
+                    </ul>
+                  </aside>
+              </div>
+          </div>
+      </section>
+
+
+      <footer class="footer">
+        <div class="footer-inner">
+            <div>
+                <img src ="img/logo.png" alt=" logo"class="logo-small" >
+            </div>
+            <div>
+                <a target="_blank" href="https://twitter.com/NZAmbience"><i class="fa-brands fa-twitter" id="tw" alt="twitter"></i></a> 
+                <a target="_blank" href="https://www.youtube.com/channel/UCTWCJh3YwDTQ8hM_4MJ2YJA"><i class="fa-brands fa-youtube" id="yt" alt="youtube"></i></a>
+                <a target="_blank" href="https://medium.com/@naziafakhruddin"><i class="fa-brands fa-medium" id="md"alt="medium"></i></a>
+                
+            </div>
+            <div>
+                <a href="#" class="a-foot">&copy; Code2Inspire 2022</a>
+            </div>         
+        </div>
+    </footer>
+     
+</body>
+</html>
