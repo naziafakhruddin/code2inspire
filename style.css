@@ -181,7 +181,7 @@ nav{
     font-size:30px;  
     margin:10px 0  0 -80px; 
 }
-.card{
+.cardw{
     display:flex;
     flex-direction:row;
     flex-wrap:wrap;
@@ -189,24 +189,24 @@ nav{
     margin:50px 0 0 0px;
     background:linear-gradient(2.8rad,transparent,#fff,#eee,#c7dcee);  
 }
-.card h3{
+.cardw h3{
     margin-bottom:30px;
 }
-.card img{
+.cardw img{
     flex:1;
     padding:20px;
     width:100%;
     height:200px;
 }
-.card .upcoming{
+.cardw .upcoming{
     width:50%;
     height:50%;
 }
-.card > div{
+.cardw > div{
     flex:2;
     padding:10px;
 }
-.card:nth-child(odd) img{
+.cardw:nth-child(odd) img{
     order:1;
 }
 ol{
