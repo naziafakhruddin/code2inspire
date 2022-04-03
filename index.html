@@ -28,20 +28,22 @@
     </script>
 </head>
 <body>
-    <div class="menu-btn">
-        <i class="fa-solid fa-bars "></i>
-    </div>
     <div class="container">
-      <!--Nav-->
-      <nav class="main-nav">
-         <img src ="img/logo.png" alt=" logo"class="logo" >
-        
-          <ul class="main-menu ">
-              <li><a href="index.html" class="current-pg">Home</a></li>
-              <li><a href="tutorials.html">Tutorials</a></li>
-              <!--<li><a href="#">Services</a></li>-->
-          </ul>
-      </nav>
+    <!------------------------------Nav---------------------------------------------->
+    <nav>    
+      <img src ="img/logo.png" alt=" logo"class="logo" >
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <ul>    
+            <li><a href="index.html">Home</a></li>
+            <li><a href="tutorials.html">Tutorials</a></li>
+            <li><a href="work.html">Worshops</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <span onclick="openNav()">&#9776;</span>
+    </nav> 
+    <!------------------------------------------------------------------------------> 
       <!--Showcase--> 
       <header class="showcase">
           <h2 class="show">Learn to code the easy way</h2>
@@ -58,33 +60,21 @@
          <div>
              <img src="img/robologo.png" alt="robot picture" class="cards">
              <h3>Canvas in Browser</h3>
-             <p>
-                You will learn how to make the basic 3D shapes. 
-             </p>
              <a href="canvas.html">Learn More <i class="fas fa-chevron-right"></i></a>
          </div> 
          <div>
             <img src="img/blog2.png" alt="2D arcs" class="cards">
             <h3>2D Shapes</h3>
-            <p>
-               You will learn how to make the basic 2D shapes. 
-            </p>
             <a href="2d.html">Learn More <i class="fas fa-chevron-right"></i></a>
         </div> 
         <div>
-            <img src="img/3DHolo.png" alt="3D boxes" class="cards">
+            <img src="img/3Dchain.png" alt="3D boxes" class="cards">
             <h3>3D Shapes</h3>
-            <p>
-               You will learn how to animate the basic shapes. 
-            </p>
             <a href="3d.html">Learn More <i class="fas fa-chevron-right"></i></a>
         </div> 
         <div>
             <img src="img/random.png" alt="3D boxes" class="cards">
-            <h3>Mapping and Random</h3>
-            <p>
-               You will learn how to animate the basic shapes. 
-            </p>
+            <h3>Map and Random</h3>
             <a href="map.html">Learn More <i class="fas fa-chevron-right"></i></a>
         </div> 
       </section>
@@ -110,34 +100,26 @@
         <div>
             <img src="img/book1.png" alt="3D boxes" class="cards">
             <h3>Superfun P5.js Projects</h3>
-            <p>
-                This book is our attempt  to create lesson plan for beginners ,who wants to learn to code in a  fun way. 
-            </p>
-            <a target="_blank" href="https://www.amazon.co.uk/Superfun-P5-js-Projects-Nazia-Fakhruddin/dp/1697457622/">Learn More <i class="fas fa-chevron-right"></i></a>
+    
+            <a target="_blank" href="https://www.amazon.co.uk/Superfun-P5-js-Projects-Nazia-Fakhruddin/dp/1697457622/">BUY NOW <i class="fas fa-chevron-right"></i></a>
         </div> 
         <div>
-           <img src="img/book2.png" alt="2D arcs" class="cards">
-           <h3>Texturing 3D shapes with 2D</h3>
-           <p>
-            In Hello World Magazine Issue 11 for educators,my lesson  plan  got published. Check out page 82 of the magazine.
-           </p>
-           <a target="_blank" href="https://helloworld.raspberrypi.org/issues/11">Learn More <i class="fas fa-chevron-right"></i></a>
+           <img src="img/article1.png" alt="2D arcs" class="cards">
+           <h3>Hello World Magazine Issue 11 - Page 82</h3> 
+           
+           <a target="_blank" href="https://helloworld.raspberrypi.org/issues/11">READ MORE <i class="fas fa-chevron-right"></i></a>
        </div> 
        <div>
-           <img src="img/book3.png" alt="3D boxes" class="cards">
+           <img src="img/book2.png" alt="3D boxes" class="cards">
            <h3>Fun Art Projects in P5.js</h3>
-           <p>
-            This book consists of creative coding art projects using vertex, bezier curve etc.Some of the projects have mouse and sound interactions as well .  
-           </p>
-           <a target="_blank" href="https://www.amazon.co.uk/Fun-Art-Projects-P5-js-Beginners/dp/B0863QDFXR">Learn More <i class="fas fa-chevron-right"></i></a>
+           
+           <a target="_blank" href="https://www.amazon.co.uk/Fun-Art-Projects-P5-js-Beginners/dp/B0863QDFXR">BUY NOW <i class="fas fa-chevron-right"></i></a>
        </div> 
        <div>
-           <img src="img/book4.png" alt="3D boxes" class="cards">
-           <h3>Create a Holographic Illusion</h3>
-           <p>
-            In Hello World Magazine Issue 12 for educators, my lesson  plan regarding holographic illusion got published. Check out page 71 of the magazine  .
-           </p>
-           <a target="_blank" href="https://helloworld.raspberrypi.org/issues/12">Learn More <i class="fas fa-chevron-right"></i></a>
+           <img src="img/article2.png" alt="3D boxes" class="cards">
+           <h3>Hello World Magazine Issue 12 - Page 71 </h3>
+
+           <a target="_blank" href="https://helloworld.raspberrypi.org/issues/12">READ MORE <i class="fas fa-chevron-right"></i></a>
        </div> 
      </section>
      <!--Videos-->
@@ -166,13 +148,20 @@
                 
             </div>
             <div>
-                <a href="#" class="a-foot">&copy; CodingMasterclass 2022</a>
+                <a href="#" class="a-foot">&copy; ComputingMasterclass 2022</a>
             </div>         
         </div>
     </footer>
+    <!------------------------Javascript for nav------------------------------>
     <script>
-        document.querySelector('.menu-btn').addEventListener('click',()=> document.querySelector('.main-menu').classList.toggle('show'));
-    </script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+        }
+        </script>
      
 </body>
 </html>

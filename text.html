@@ -28,20 +28,22 @@
     </script>
 </head>
 <body>
-    <div class="menu-btn">
-        <i class="fa-solid fa-bars "></i>
-    </div>
     <div class="container">
-      <!--Nav-->
-      <nav class="main-nav">
+      <!------------------------------Nav---------------------------------------------->
+    <nav>    
         <img src ="img/logo.png" alt=" logo"class="logo" >
-        
-        <ul class="main-menu ">
-              <li><a href="index.html" ">Home</a></li>
-              <li><a href="tutorials.html" ">Tutorials</a></li>  
-              <!--<li><a href="#">Services</a></li>-->
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <ul>    
+              <li><a href="index.html">Home</a></li>
+              <li><a href="tutorials.html">Tutorials</a></li>
+              <li><a href="work.html">Worshops</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
           </ul>
-      </nav>
+        </div>
+        <span onclick="openNav()">&#9776;</span>
+      </nav> 
+      <!------------------------------------------------------------------------------> 
       <section id="article">
           <div class="container">
               <div class="page-container">
@@ -70,7 +72,8 @@
                   </article>
                   <aside id="categories" class="card ">
                     <h2> NEXT UP</h2>
-                    <ul class="list">  
+                    <ul class="list"> 
+                      <li><a class="link" href="coord.html">COORDINATES IN 2D AND 3D </a></li><br>     
                       <li><a class="link" href="canvas.html">CANVAS IN BROWSER </a></li><br>
                       <li><a class="link" href="2d.html"> 2D SHAPES </a></li><br>
                       <li><a class="link" href="3d.html"> 3D SHAPES </a></li><br>
@@ -80,14 +83,13 @@
                       <li><a class="link" href="variables.html"> VARIABLES </a></li><br>
                       <li><a class="link" href="loop.html"> FOR AND NESTED LOOP </a></li><br>
                       <li><a class="link" href="animate.html"> UFO WITH KEY CONTROLS </a></li><br>
-                      <li><a class="link" href="text.html"> TEXT </a></li><br>
-                      <li><a class="link" href="3dimg.html"> IMAGE TEXTURING IN 3D </a></li><br>
+                      <li><a class="link" href="3dimg.html"><i class="fa-solid fa-caret-right"></i> IMAGE TEXTURING IN 3D </a></li><br>
                   </ul>
                 </aside>
               </div>
           </div>
       </section>
-
+      </div>
 
       <footer class="footer">
         <div class="footer-inner">
@@ -101,10 +103,19 @@
                 
             </div>
             <div>
-                <a href="#" class="a-foot">&copy; CodingMasterclass 2022</a>
+                <a href="#" class="a-foot">&copy; ComputingMasterclass 2022</a>
             </div>         
         </div>
     </footer>
-     
+    <!------------------------Javascript for nav------------------------------>
+    <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+        }
+    </script> 
 </body>
 </html>
