@@ -33,6 +33,12 @@ b{
     max-width:1100px;
     margin:auto;
 }
+iframe{
+    width:100%;
+    height:1000px;
+    margin:auto;
+    padding:20px;
+}
 /*------------------------- Navigation------------------------------- */
 nav{
     display:flex;
