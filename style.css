@@ -121,6 +121,7 @@ nav{
 .showcase {
     width:100%;
     height:500px;
+    background-color:linear-gradient(46deg,#c1c1e4,white ,rgb(223, 176, 223));
     background:url(img/loopy.png) no-repeat center center/cover;
     display:flex;
     flex-direction:column;
@@ -167,6 +168,7 @@ nav{
 .workshop {
     width:100%;
     height:500px;
+    background-color:linear-gradient(46deg,#bfbfe0,white ,rgb(226, 178, 226));
     background:url(img/solaris.png) no-repeat center center/cover;
     display:flex;
     flex-direction:column;
