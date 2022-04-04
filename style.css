@@ -181,42 +181,47 @@ nav{
     font-size:30px;  
     margin:10px 0  0 -80px; 
 }
-.cardw{
+.work-section{
     display:flex;
     flex-direction:row;
     flex-wrap:wrap;
     justify-content: space-between;
     margin:50px 0 0 0px;
+    font-size:14px; 
     background:linear-gradient(2.8rad,transparent,#fff,#eee,#c7dcee);  
 }
-.cardw h3{
+.work-section h3{
     margin-bottom:30px;
 }
-.cardw img{
+.work-section img{
     flex:1;
     padding:20px;
     width:100%;
     height:200px;
 }
-.cardw .upcoming{
+.work-section .upcoming{
     width:50%;
     height:50%;
 }
-.cardw > div{
+.work-section> div{
     flex:2;
-    padding:10px;
+    padding:20px;
 }
-.cardw:nth-child(odd) img{
+.work-section:nth-child(odd) img{
     order:1;
 }
 ol{
-    padding:30px;
+    padding:10px;
 }
 .past{
     color:#191970;
 }
 .past:hover{
     color:purple;
+}
+.upcoming{
+    width:50%;
+    height:40%;
 }
 
 /*--------------------------------------------------------------------------------*/
@@ -659,21 +664,34 @@ aside{
         grid-row:1 / span 3;
     }
     
-    .card .upcoming{
-        width:50%;
-        height:50%;
-    }
+    
     .card{
         display:flex;
         flex-direction:column;
         flex-wrap:wrap;
         justify-content: space-between;
         margin:50px 0 0 0px;
-        background:linear-gradient(2.8rad,transparent,#fff,#eee,#c7dcee);  
+        
+    }
+    .upcoming{
+        width:50%;
+        height:50%;
+    }
+    .upcoming2{
+        width:100%;
+        height:150px;
     }
     .workshop h2 {
         font-size:18px;  
         margin:10px 0  0 -80px; 
+    }
+    .work-section{
+        display:flex;
+        flex-direction:row;
+        flex-wrap:wrap;
+        justify-content: space-between;
+        margin:50px 0 0 0px;
+        background:linear-gradient(2.8rad,transparent,#fff,#eee,#c7dcee);  
     }
     .para{
         padding: 20px 20px 10px 0px;
@@ -702,7 +720,7 @@ aside{
     }
     
 }
-@media(max-width:550px){
+@media(max-width:570px){
     .logo{
         padding-top:0;
         width:150px;
@@ -801,7 +819,7 @@ aside{
     .a-foot{
         padding-left:15px;
     }
-    .card{
+    .work-section{
         display:flex;
         flex-direction:column;
         flex-wrap:wrap;
@@ -812,6 +830,10 @@ aside{
     .workshop h2 {
         font-size:18px;  
         margin:10px 0  0 -80px; 
+    }
+    .card .upcoming{
+        width:50%;
+        height:50%;
     }
     .para{
         padding: 20px 20px 10px 0px;
